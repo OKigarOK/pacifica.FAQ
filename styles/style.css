@@ -27,13 +27,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.update {
-    font-size: 15px;
-    font-weight: bolder;
-    text-align: right;
-    color: whitesmoke;
-}
-
 .container {
     box-sizing: border-box;
     min-width: 360px;
@@ -50,7 +43,6 @@ body {
     width: 100%;
     margin-bottom: 5px;
     text-align: center;
-    padding: 5px;
 }
 
 .list_item {
@@ -94,13 +86,6 @@ body {
     justify-content: space-between;
     width: 150px;
     margin: 5px;
-    transition: all linear 0.25s;
-
-}
-
-.increase {
-    transform: scale(2);
-    transition: all linear 0.25s;
 }
 
 .item_image {
@@ -160,9 +145,5 @@ h1 {
     h1 {
         text-align: center;
         display: block;
-    }
-
-    .logo img {
-        display: none;
     }
 }
