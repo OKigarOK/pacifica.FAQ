@@ -42,7 +42,7 @@ body {
 .container {
     box-sizing: border-box;
     min-width: 360px;
-    padding: 5px;
+    padding: 5px 5px 0 5px;
     margin: 0 auto;
 }
 
@@ -53,9 +53,9 @@ body {
 
 .logo img{
     width: 100%;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     text-align: center;
-    padding: 5px;
+    /*padding: 5px;*/
 }
 
 .list_item {
@@ -159,6 +159,8 @@ h1 {
     transition: height ease-in-out 1s;
 }
 
+
+
 @media screen and (min-width: 500px) {
     body {
         background: black;
@@ -168,7 +170,8 @@ h1 {
         background-position: center;
     }
 
-    .container {
+    .container,
+    .footer {
         display: none;
     }
 
@@ -181,3 +184,53 @@ h1 {
         display: none;
     }
 }
+
+/* FOOTER */
+
+.footer {
+    box-sizing: border-box;
+    background: black;
+    opacity: 0.9;
+    width: Calc(100% - 10px);
+    margin: 0 5px 5px;
+    border: 5px solid wheat;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.footer_info {
+    font-size: 16px;
+    text-align: justify;
+    line-height: 1.5em;
+    color: white;
+    margin: 0 5px 5px;
+}
+
+.footer_info span {
+    font-weight: bolder;
+    color: wheat;
+}
+
+.inline img:hover {
+    cursor: pointer;
+    filter: none
+}
+
+.inline {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+/*.inline img {*/
+/*    width: 50px;*/
+/*}*/
+
+/*.messenger {*/
+/*    width: 45px;*/
+/*}*/
+
+/*.other {*/
+/*    width: 50px;*/
+/*}*/
