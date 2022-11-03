@@ -1,5 +1,7 @@
 import {DATA} from "./data.js";
 
+// DOM-дерево
+
 const Header = document.getElementById('header')
 
 for (let item of DATA) {
@@ -80,3 +82,30 @@ for (let i = 0; i < acc.length; i++) {
 //         item.classList.toggle('increase')
 //     })
 // }
+
+// МОДАЛКА
+
+const increaseElements = document.querySelectorAll('.item')
+const modalBackground = document.getElementById('header')
+const modal = document.getElementById("myModal");
+
+for(let i = 0; i < increaseElements.length; i++) {
+    increaseElements[i].addEventListener('click', () => {
+        modal.insertAdjacentHTML('beforeend', `${increaseElements[i].innerHTML}`)
+        const increaseImage = document.getElementsByClassName('item_image')
+        increaseImage[0].style.width = '100%'
+        modal.style.display = "block";
+        modalBackground.style.background = 'rgba(0,0,0)';
+        modalBackground.style.background = 'rgba(0,0,0,0.75)';
+        modalBackground.style.pointerEvents = 'none';
+        document.body.style.overflow = "hidden";
+    })
+
+    modal.addEventListener('click', () => {
+        modal.style.display = "none";
+        modal.innerHTML = '';
+        modalBackground.style.background = 'rgba(0,0,0,0)';
+        modalBackground.style.pointerEvents = 'all';
+        document.body.style.overflow = "visible";
+    })
+}

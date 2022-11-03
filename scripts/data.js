@@ -108,7 +108,12 @@ export const DATA = [
                         item_image: './images/maintenance/belt_dayco_6pk2375.jpg',
                         item_code: '6PK2375 (Dayco)',
                         item_note: ''
-                    }
+                    },
+                    {
+                        item_image: './images/maintenance/short_belt_2050-2100.jpg',
+                        item_code: '6PK2050-2100)',
+                        item_note: 'Ремень в обход кондиционера'
+                    },
                 ]},
             {subtitle: 'Ремень ГРМ', id: 'belt_timing', items: [
                     {
@@ -228,6 +233,41 @@ export const DATA = [
                         item_image: './images/engine/gaskets_mahle_vs50248.jpg',
                         item_code: 'VS50248 (Mahle)',
                         item_note: 'Прокладки клапанной крышки'
+                    },
+                    {
+                        item_image: './images/engine/intake_plenum_gasket_mahle__ms19537.jpg',
+                        item_code: 'MS19537 (Mahle)',
+                        item_note: 'Прокладка впускного коллектора'
+                    },
+                    {
+                        item_image: './images/engine/intake_manifold_gasket_mahle_ms16210.jpg',
+                        item_code: 'MS16210 (Mahle)',
+                        item_note: 'Прокладки коллектора ДВС (2шт)'
+                    },
+                    {
+                        item_image: './images/engine/gasket_set_fel-pro_ms921651.jpg',
+                        item_code: 'MS921651 (Fel-pro)',
+                        item_note: 'Коплект прокладок коллектора'
+                    },
+                    {
+                        item_image: './images/engine/water_outlet_seal_fel-pro_35631.jpg',
+                        item_code: '35631 (Fel-pro)',
+                        item_note: 'Прокладка нижнего патрубка ОЖ'
+                    },
+                    {
+                        item_image: './images/engine/water_outlet_seal_fel-pro_35651.jpg',
+                        item_code: '35651 (Fel-pro)',
+                        item_note: 'Прокладка верхнего патрубка ОЖ (термостат)'
+                    },
+                    {
+                        item_image: './images/engine/oil_pan_gasket_mopar_04792663aa.jpg',
+                        item_code: '04792633AA (Mopar)',
+                        item_note: 'Прокладка масленного поддона 2003+'
+                    },
+                    {
+                        item_image: './images/engine/oil_pan_gasket_mopar_04892072aa.jpg',
+                        item_code: '04892072AA (Mopar)',
+                        item_note: 'Прокладка масленного поддона 2005+'
                     },
                 ]},
             {subtitle: 'Система подачи воздуха', id: ''},
@@ -400,12 +440,21 @@ export const DATA = [
                         item_code: '902-698 (Dorman)',
                         item_note: 'верхний патрубок'
                     },
-
                     {
                         item_image: './images/cooling_system/thermostat_housing_dorman_902-3037.jpg',
                         item_code: '902-3037 (Dorman)',
                         item_note: 'нижний патрубок'
-                    }
+                    },
+                    {
+                        item_image: './images/engine/water_outlet_seal_fel-pro_35651.jpg',
+                        item_code: '35651 (Fel-pro)',
+                        item_note: 'Прокладка верхнего патрубка ОЖ (термостат)'
+                    },
+                    {
+                        item_image: './images/engine/water_outlet_seal_fel-pro_35631.jpg',
+                        item_code: '35631 (Fel-pro)',
+                        item_note: 'Прокладка нижнего патрубка ОЖ'
+                    },
                 ]},
             {subtitle: 'Выключатель, датчик', id: ''},
             {subtitle: 'Вентилятор охлаждения радиатора', id: ''},
@@ -472,6 +521,26 @@ export const DATA = [
         id: 'chassis',
         sub_titles: [
             {subtitle: 'Пружина подвески', id: 'spring', items: [
+                    {
+                        item_image: './images/chassis/front_spring_obk_c4t61562h.jpg',
+                        item_code: 'C4T61562H (OBK)',
+                        item_note: 'Передняя пружина "колхоз"'
+                    },
+                    {
+                        item_image: './images/chassis/rear_spring_obk_c4t6188h.jpg',
+                        item_code: 'C4T6188H (OBK)',
+                        item_note: 'Задняя пружина (подпилить)'
+                    },
+                    {
+                        item_image: './images/chassis/front_spring_lesjofors_4063492.jpg',
+                        item_code: '4063492 (Lesjofors)',
+                        item_note: 'Передняя пружина (ещё не ставили)'
+                    },
+                    {
+                        item_image: './images/chassis/rear_spring_lesjofors_4014219.jpg',
+                        item_code: '4014219 (Lesjofors)',
+                        item_note: 'Задняя пружина (ещё не ставили)'
+                    },
                     {
                         item_image: './images/chassis/spring_support_monroe_908959.jpg',
                         item_code: '908959 (Monroe)',
