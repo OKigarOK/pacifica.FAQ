@@ -1,3 +1,8 @@
+export const ABOUT = 'Справочник составлен благодаря и с помощью гуру сообщества Пацифистов, а также всех причастных к эксплуатации замечательного автомобиля  Chrysler Pacifica CS.\n' +
+    'Все рекомендуемые запчасти – проверены на автомобилях чатлан, методы и способы ремонта – апробированы ими же. Следовательно, заслуживают полного доверия и абсолютного одобрения.\n' +
+    'Также спешу напомнить, что для общительных людей функционирует чат в WhatsApp, где вежливые и веселые чатлане с удовольствием проконсультируют Вас по любым вопросам, в том числе и касающимся ремонта автомобиля.\n' +
+    'Замечания и предложения по улучшению работы платформы можно присылать мне лично, скромному собирателю житейской мудрости Пацифистов всех времен и народов, удобным для Вас способом:'
+
 export const DATA = [
     {
         title: 'Детали для ТО:',
@@ -111,7 +116,7 @@ export const DATA = [
                     },
                     {
                         item_image: './images/maintenance/short_belt_2050-2100.jpg',
-                        item_code: '6PK2050-2100)',
+                        item_code: '6PK 2050-2100',
                         item_note: 'Ремень в обход кондиционера'
                     },
                 ]},
@@ -147,7 +152,23 @@ export const DATA = [
                         item_image: './images/maintenance/thermostat_gates_33952.jpg',
                         item_code: '33952 (Gates)',
                         item_note: ''
-                    }
+                    },
+                    {
+                        item_image: './images/cooling_system/thermostat_housting_dorman_902-698.jpg',
+                        item_code: '902-698 (Dorman)',
+                        item_note: 'верхний патрубок (корпус термостата)'
+                    },
+                    {
+                        item_image: './images/engine/water_outlet_seal_fel-pro_35651.jpg',
+                        item_code: '35651 (Fel-pro)',
+                        item_note: 'Прокладка верхнего патрубка (термостат)'
+                    },
+                    {
+                        item_image: './images/cooling_system/thermostat_housing_mopar_04781387aa.jpg',
+                        item_code: '04781387AA (Mopar)',
+                        item_note: 'верхний патрубок (корпус термостата)'
+                    },
+
                 ]},
             {subtitle: 'Пробка сливного отверстия', id: 'oil_drain', items: [
                     {
@@ -215,7 +236,27 @@ export const DATA = [
                         item_image: './images/maintenance/break_pads_patron_pbp7001.jpg',
                         item_code: 'PBP7001 (Patron)',
                         item_note: 'Задние колодки'
-                    }
+                    },
+                    {
+                        item_image: './images/maintenance/break_pads_raybestos_sgd997c.jpg',
+                        item_code: 'SGD997C (Raybestos)',
+                        item_note: 'Передние колодки'
+                    },
+                    {
+                        item_image: './images/maintenance/break_pads_raybestos_sgd998c.jpg',
+                        item_code: 'SGD998C (Raybestos)',
+                        item_note: 'Задние колодки'
+                    },
+                    {
+                        item_image: './images/maintenance/break_pads_raybestos_eht997h.jpg',
+                        item_code: 'EHT997H (Raybestos)',
+                        item_note: 'Передние колодки (керамика)'
+                    },
+                    {
+                        item_image: './images/maintenance/break_pads_raybestos_eht998h.jpg',
+                        item_code: 'EHT998H (Raybestos)',
+                        item_note: 'Задние колодки (керамика)'
+                    },
                 ]},
         ]
     },
@@ -418,17 +459,17 @@ export const DATA = [
                     {
                         item_image: './images/cooling_system/radiator_hose_dayco_72215.jpg',
                         item_code: '72215 (Dayco)',
-                        item_note: 'верхний патрубок'
+                        item_note: 'верхний патрубок основного радиатора'
                     },
                     {
                         item_image: './images/cooling_system/radiator_hose_dayco_72216.jpg',
                         item_code: '72216 (Dayco)',
-                        item_note: 'нижний патрубок'
+                        item_note: 'нижний патрубок основного радиатора'
                     },
                     {
                         item_image: './images/cooling_system/thermostat_housing_mopar_04781387aa.jpg',
                         item_code: '04781387AA (Mopar)',
-                        item_note: 'верхний патрубок'
+                        item_note: 'верхний патрубок (корпус термостата)'
                     },
                     {
                         item_image: './images/cooling_system/thermostat_housing_mopar_04781685aa.jpg',
@@ -438,7 +479,7 @@ export const DATA = [
                     {
                         item_image: './images/cooling_system/thermostat_housting_dorman_902-698.jpg',
                         item_code: '902-698 (Dorman)',
-                        item_note: 'верхний патрубок'
+                        item_note: 'верхний патрубок (корпус термостата)'
                     },
                     {
                         item_image: './images/cooling_system/thermostat_housing_dorman_902-3037.jpg',
@@ -448,12 +489,12 @@ export const DATA = [
                     {
                         item_image: './images/engine/water_outlet_seal_fel-pro_35651.jpg',
                         item_code: '35651 (Fel-pro)',
-                        item_note: 'Прокладка верхнего патрубка ОЖ (термостат)'
+                        item_note: 'Прокладка верхнего патрубка (термостат)'
                     },
                     {
                         item_image: './images/engine/water_outlet_seal_fel-pro_35631.jpg',
                         item_code: '35631 (Fel-pro)',
-                        item_note: 'Прокладка нижнего патрубка ОЖ'
+                        item_note: 'Прокладка нижнего патрубка'
                     },
                 ]},
             {subtitle: 'Выключатель, датчик', id: ''},
@@ -491,14 +532,64 @@ export const DATA = [
                 ]},
             {subtitle: 'Датчик кислорода', id: 'oxygen', items: [
                     {
-                        item_image: './images/exhaust_system/oxygen_mopar_04727446ad.jpg',
+                        item_image: './images/exhaust_system/oxygen_sensor1_2003_mopar_04727446ad.jpg',
                         item_code: '04727446AD (Mopar)',
-                        item_note: '1-я лямбда 2003+ (ТОЛЬКО ОРИГИНАЛ)'
+                        item_note: '2003-2004 ПЕРЕД катализатором (ТОЛЬКО ОРИГИНАЛ)'
                     },
                     {
-                        item_image: './images/exhaust_system/oxygen_mopar_04727936ad.jpg',
+                        item_image: './images/exhaust_system/oxygen_sensor2_2003_mopar_04727936ad.jpg',
                         item_code: '04727936AD (Mopar)',
-                        item_note: '2-я лямбда 2003+'
+                        item_note: '2003-2004 ПОСЛЕ катализатора'
+                    },
+                    {
+                        item_image: './images/exhaust_system/oxygen_sensor1_denso_234-4411.jpg',
+                        item_code: '234-4111 (Denso)',
+                        item_note: '2003-2004 ПЕРЕД катализатором (он же 04727446AD)'
+                    },
+                    {
+                        item_image: './images/exhaust_system/oxygen_sensor2_denso_234-4412.jpg',
+                        item_code: '234-4112 (Denso)',
+                        item_note: '2003-2004 ПОСЛЕ катализатора (он же 04727936AD)'
+                    },
+                    {
+                        item_image: './images/exhaust_system/oxygen_sensor1_mopar_56028999ab.jpg',
+                        item_code: '56028999AB (Mopar)',
+                        item_note: '2005-2006 ПЕРЕД катализатором (ТОЛЬКО ОРИГИНАЛ)'
+                    },
+                    {
+                        item_image: './images/exhaust_system/oxygen_sensor2_mopar_56028998ab.jpg',
+                        item_code: '56028998AB (Mopar)',
+                        item_note: '2005-2006 ПОСЛЕ катализатора'
+                    },
+                    {
+                        item_image: './images/exhaust_system/oxygen_sensor1_denso_234-4756(999).jpg',
+                        item_code: '234-4756 (Denso)',
+                        item_note: '2005-2006 ПЕРЕД катализатором (аналог 56028999AB)'
+                    },
+                    {
+                        item_image: './images/exhaust_system/oxygen_sensor2_denso_234-4744(998).jpg',
+                        item_code: '234-4744 (Denso)',
+                        item_note: '2005-2006 ПОСЛЕ катализатора (аналог 56028998AB)'
+                    },
+                    {
+                        item_image: './images/exhaust_system/oxygen_sensor1_mopar_56029085aa.jpg',
+                        item_code: '56029085AA (Mopar)',
+                        item_note: '2005-2006 ПЕРЕД катализатором (не проверено)'
+                    },
+                    {
+                        item_image: './images/exhaust_system/oxygen_sensor2_mopar_56029050aa.jpg',
+                        item_code: '56029050AA (Mopar)',
+                        item_note: '2005-2006 ПОСЛЕ катализатора (не проверено)'
+                    },
+                    {
+                        item_image: './images/exhaust_system/oxygen_sensor1_denso_234-4880(085).jpg',
+                        item_code: '234-4880 (Denso)',
+                        item_note: '2005-2006 ПЕРЕД катализатором (аналог 56029085AA)'
+                    },
+                    {
+                        item_image: './images/exhaust_system/oxygen_sensor2_denso_234-4588(050).jpg',
+                        item_code: '234-4588 (Denso)',
+                        item_note: '2005-2006 ПОСЛЕ катализатора (аналог 56029050AA)'
                     },
 
                 ]},
@@ -567,6 +658,11 @@ export const DATA = [
                         item_image: './images/chassis/thrust_bearing_crown_4743044aa.jpg',
                         item_code: '4743044 (Crown)',
                         item_note: 'опорный подшипник'
+                    },
+                    {
+                        item_image: './images/chassis/reinforced_washer.jpg',
+                        item_code: 'D36мм-d16мм-2.5мм',
+                        item_note: 'Шайбы в опору аммортизатора (с двух сторон)'
                     },
                 ]},
             {subtitle: 'Амортизатор подвески', id: 'shock_absorber', items: [

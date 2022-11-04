@@ -1,4 +1,4 @@
-import {DATA} from "./data.js";
+import {ABOUT, DATA} from "./data.js";
 
 // DOM-дерево
 
@@ -54,23 +54,6 @@ function addSubtitleItems(items_head, item) {
         </div>`)
 }
 
-// АККОРДИОН
-
-const acc = document.getElementsByClassName("accordion");
-
-for (let i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        const panel = this.nextElementSibling;
-
-        if (panel.style.maxHeight){
-            panel.style.maxHeight = null;
-        } else {
-            panel.style.maxHeight = "100%"
-        }
-    });
-}
-
 // АНИМАЦИЯ
 
 // const isItems = document.querySelectorAll('.item')
@@ -108,4 +91,56 @@ for(let i = 0; i < increaseElements.length; i++) {
         modalBackground.style.pointerEvents = 'all';
         document.body.style.overflow = "visible";
     })
+}
+
+const infoAbout = document.getElementById('footer_info')
+
+// infoAbout.innerText = ABOUT
+
+function addInfoAbout (items_head, item) {
+    items_head.insertAdjacentHTML('beforeend', `
+        <div class="list_item">
+        <button class="accordion">О приложении</button>
+            <div class="panel">
+                <div class="about">${item}</div>
+                <div class="contacts">
+                    <div class="inline">
+                        <a href="https://wa.me/+375291730020" target="_blank">
+                            <img style="height: 40px; padding-left: 6px" src="./images/whatsap.png" alt="whatsapp" title="Whatsapp">
+                        </a>
+                        <a href="https://t.me/okigarok" target="_blank">
+                            <img style="height: 40px; padding-left: 10px" src="./images/telegram.png" alt="telegram" title="Telegram">
+                        </a>
+                        <a href="mailto:1730020@gmail.com" target="_blank">
+                            <img style="height: 55px; padding-left: 8px" src="./images/icons8-gmail-96.png" alt="email" title="Email">
+                        </a>
+                        <a href="https://www.drive2.ru/r/chrysler/pacifica/491169987143139953/" target="_blank">
+                            <img style="height: 50px; padding-left: 4px " src="./images/icon_drive2.png" alt="drive2" title="Drive2">
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCQnuGmKlz4jtkdxSamt4z5w/videos" target="_blank">
+                            <img style="height: 55px" src="./images/icons8-youtube-в-квадрате-96.png" alt="youtube" title="YouTube">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>`)
+}
+
+addInfoAbout(infoAbout, ABOUT)
+
+// АККОРДИОН
+
+const acc = document.getElementsByClassName("accordion");
+
+for (let i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        const panel = this.nextElementSibling;
+
+        if (panel.style.maxHeight){
+            panel.style.maxHeight = null;
+        } else {
+            panel.style.maxHeight = "100%"
+        }
+    });
 }

@@ -9,23 +9,18 @@
 }
 
 body {
-
     width: 100%;
-    /*height: 100vh;*/
-
     -moz-user-select: none;
-    -khtml-user-select: none;
+    /*-khtml-user-select: none;*/
     user-select: none;
-
     background: black;
     background: url('../images/chrysler_pacifica_bg.jpg') fixed no-repeat;
-    /* background: url('../images_send/chrysler_pacifica.jpg') fixed no-repeat; */
     background-size: cover;
     background-position: center;
-
     color: whitesmoke;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 .header_title {
     display: flex;
     justify-content: space-between;
@@ -51,11 +46,10 @@ body {
     /* justify-content: center; */
 }
 
-.logo img{
+.logo img {
     width: 100%;
     margin-bottom: 10px;
     text-align: center;
-    /*padding: 5px;*/
 }
 
 .list_item {
@@ -63,9 +57,6 @@ body {
     background: black;
     opacity: 0.9;
     width: 100%;
-
-    /*max-height: 2000px;*/
-
     border: 5px solid wheat;
     border-radius: 20px;
     padding: 5px;
@@ -78,25 +69,10 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
-
-    /*height: 100%;*/
-
     border: 2px solid wheat;
     border-radius: 10px;
-    /* padding: 0px 0px; */
     margin-bottom: 5px;
 }
-
-/* .new_item_container {
-    box-sizing: border-box;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    width: 100%;
-    border: 2px solid wheat;
-    border-radius: 10px;
-    margin-bottom: 10px;
-} */
 
 .item {
     box-sizing: border-box;
@@ -106,7 +82,6 @@ body {
     width: 150px;
     margin: 5px;
     transition: all linear 0.25s;
-
 }
 
 .increase {
@@ -126,10 +101,6 @@ body {
 .item_image:hover {
     cursor: pointer;
 }
-
-/*.item_image:active {*/
-/*    transform: scale(2);*/
-/*}*/
 
 .item_image img {
     width: 100%;
@@ -159,13 +130,11 @@ h1 {
     transition: height ease-in-out 1s;
 }
 
-
-
 @media screen and (min-width: 500px) {
     body {
         background: black;
         /*background: url('../images_send/chrysler_pacifica_bg.jpg') fixed no-repeat;*/
-         background: url('../images/chrysler_pacifica.jpg') fixed no-repeat;
+        background: url('../images/chrysler_pacifica.jpg') fixed no-repeat;
         background-size: cover;
         background-position: center;
     }
@@ -185,30 +154,12 @@ h1 {
     }
 }
 
-/* FOOTER */
-
-.footer {
-    box-sizing: border-box;
-    background: black;
-    opacity: 0.9;
-    width: Calc(100% - 10px);
-    margin: 0 5px 5px;
-    border: 5px solid wheat;
-    border-radius: 20px;
-    padding: 5px;
-}
-
-.footer_info {
+.about {
     font-size: 16px;
     text-align: justify;
-    line-height: 1.5em;
+    line-height: 1.2em;
     color: white;
-    margin: 0 5px 5px;
-}
-
-.footer_info span {
-    font-weight: bolder;
-    color: wheat;
+    padding: 0 5px;
 }
 
 .inline img:hover {
@@ -220,17 +171,4 @@ h1 {
     display: flex;
     justify-content: space-around;
     align-items: center;
-
 }
-
-/*.inline img {*/
-/*    width: 50px;*/
-/*}*/
-
-/*.messenger {*/
-/*    width: 45px;*/
-/*}*/
-
-/*.other {*/
-/*    width: 50px;*/
-/*}*/
