@@ -8,6 +8,13 @@ export const DATA = [
         title: 'Детали для ТО:',
         id: 'maintenance',
         sub_titles: [
+            {subtitle: 'ВАЖНО!!! Заправочные емкости', id: 'refueling tanks', items: [
+                    {
+                        item_image: './images/maintenance/refueling_tanks.jpg',
+                        item_code: '',
+                        item_note: ''
+                    },
+                ]},
             {subtitle: 'Фильтр маслянный', id: 'oil_filter', items: [
                     {
                         item_image: './images/maintenance/oil_filter_mopar_05281090.jpg',
@@ -96,7 +103,12 @@ export const DATA = [
                         item_image: './images/maintenance/spark_plug_mopar_SZFR5LP13G.jpg',
                         item_code: 'SZFR5LP13G (Mopar)',
                         item_note: ''
-                    }
+                    },
+                    {
+                        item_image: './images/maintenance/srapks_faq.jpg',
+                        item_code: '',
+                        item_note: ''
+                    },
                 ]},
             {subtitle: 'Ремень поликлинковый', id: 'belt', items: [
                     {
@@ -141,17 +153,22 @@ export const DATA = [
                     {
                         item_image: './images/maintenance/motorad_465-195.jpg',
                         item_code: '465-195 (Motorad)',
-                        item_note: ''
+                        item_note: 'Термостат'
                     },
                     {
                         item_image: './images/maintenance/thermostat_stant_14789.jpg',
                         item_code: '14789 (Stant)',
-                        item_note: ''
+                        item_note: 'Термостат'
                     },
                     {
                         item_image: './images/maintenance/thermostat_gates_33952.jpg',
                         item_code: '33952 (Gates)',
-                        item_note: ''
+                        item_note: 'Термостат'
+                    },
+                    {
+                        item_image: './images/maintenance/thermostat_chrysler_68210217aa.jpg',
+                        item_code: '68210217AA (Chrysler)',
+                        item_note: 'Термостат'
                     },
                     {
                         item_image: './images/cooling_system/thermostat_housting_dorman_902-698.jpg',
@@ -161,7 +178,7 @@ export const DATA = [
                     {
                         item_image: './images/engine/water_outlet_seal_fel-pro_35651.jpg',
                         item_code: '35651 (Fel-pro)',
-                        item_note: 'Прокладка верхнего патрубка (термостат)'
+                        item_note: 'Прокладка верхнего патрубка (термостата)'
                     },
                     {
                         item_image: './images/cooling_system/thermostat_housing_mopar_04781387aa.jpg',
@@ -275,21 +292,7 @@ export const DATA = [
                         item_code: 'VS50248 (Mahle)',
                         item_note: 'Прокладки клапанной крышки'
                     },
-                    {
-                        item_image: './images/engine/intake_plenum_gasket_mahle__ms19537.jpg',
-                        item_code: 'MS19537 (Mahle)',
-                        item_note: 'Прокладка впускного коллектора'
-                    },
-                    {
-                        item_image: './images/engine/intake_manifold_gasket_mahle_ms16210.jpg',
-                        item_code: 'MS16210 (Mahle)',
-                        item_note: 'Прокладки коллектора ДВС (2шт)'
-                    },
-                    {
-                        item_image: './images/engine/gasket_set_fel-pro_ms921651.jpg',
-                        item_code: 'MS921651 (Fel-pro)',
-                        item_note: 'Коплект прокладок коллектора'
-                    },
+
                     {
                         item_image: './images/engine/water_outlet_seal_fel-pro_35631.jpg',
                         item_code: '35631 (Fel-pro)',
@@ -311,7 +314,38 @@ export const DATA = [
                         item_note: 'Прокладка масленного поддона 2005+'
                     },
                 ]},
-            {subtitle: 'Система подачи воздуха', id: ''},
+            {subtitle: 'Система подачи воздуха', id: 'air_supply_system', items: [
+                    {
+                        item_image: './images/engine/air_intake_temperature_sensor_mopar_04606487ab.jpg',
+                        item_code: '04606487AB (Mopar)',
+                        item_note: 'Датчик температуры воздуха'
+                    },
+                    {
+                        item_image: './images/engine/intake_plenum_gasket_mahle__ms19537.jpg',
+                        item_code: 'MS19537 (Mahle)',
+                        item_note: 'Прокладка впускного коллектора'
+                    },
+                    {
+                        item_image: './images/engine/intake_manifold_gasket_mahle_ms16210.jpg',
+                        item_code: 'MS16210 (Mahle)',
+                        item_note: 'Прокладки коллектора ДВС (2шт)'
+                    },
+                    {
+                        item_image: './images/engine/gasket_set_fel-pro_ms921651.jpg',
+                        item_code: 'MS921651 (Fel-pro)',
+                        item_note: 'Комплект прокладок коллектора'
+                    },
+                    {
+                        item_image: './images/engine/throttle_body_gasket_fel-pro_61230.jpg',
+                        item_code: '61230 (Fel-pro)',
+                        item_note: 'Прокладка дроссельной заслонки'
+                    },
+                    {
+                        item_image: './images/engine/throttle_body_gasket_mahle_g31666.jpg',
+                        item_code: 'G31666 (Mahle)',
+                        item_note: 'Прокладка дроссельной заслонки'
+                    },
+                ]},
             {subtitle: 'Механизм газораспределения', id: 'timing', items: [
                     {
                         item_image: './images/engine/timing_kit_gates_tck295a.jpg',
@@ -344,9 +378,72 @@ export const DATA = [
                         item_note: ''
                     },
                 ]},
-            {subtitle: 'Блок-картер', id: ''},
-            {subtitle: 'Кривошипношатунный механизм', id: ''},
-            {subtitle: 'Система смазки', id: ''},
+            {subtitle: 'Блок-картер', id: 'crankcase_block', items: [
+                    {
+                        item_image: './images/engine/coolant_temperature_sensor_mopar_05269870ab.jpg',
+                        item_code: '05269870AB (Mopar)',
+                        item_note: 'Датчик температуры охлаждающей жидкости'
+                    },
+                    {
+                        item_image: './images/engine/valve_pcv_mopar_04792962aa.jpg',
+                        item_code: '04792962AA (Mopar)',
+                        item_note: 'Клапан PCV'
+                    },
+                    {
+                        item_image: './images/engine/oil_pressure_sender_standart_ps287t.jpg',
+                        item_code: 'PS287T (Standart)',
+                        item_note: 'Датчик давления масла'
+                    },
+                    {
+                        item_image: './images/engine/oil_pressure_sender_bmw_12617513068.jpg',
+                        item_code: '12617513068 (BMW)',
+                        item_note: 'Датчик давления масла'
+                    },
+                    {
+                        item_image: './images/engine/oil_pressure_sender_mopar_05149098aa.jpg',
+                        item_code: '05149098AA (Mopar)',
+                        item_note: 'Датчик давления масла'
+                    },
+                    {
+                        item_image: './images/engine/oil_dipstick_chrysler_04792670ab.jpg',
+                        item_code: '04792670AB (Chrysler)',
+                        item_note: 'Маслянный щуп'
+                    },
+                ]},
+            {subtitle: 'Кривошипношатунный механизм', id: 'crank_mechanism', items: [
+                    {
+                        item_image: './images/engine/harmonic_balanser_mopar_04792989aa.jpg',
+                        item_code: '04792989AA (Mopar)',
+                        item_note: 'Шкив коленвала'
+                    },
+                    {
+                        item_image: './images/engine/harmonic_balanser_nty_rkp-ch-021.jpg',
+                        item_code: 'RKP-CH-021 (NTY)',
+                        item_note: 'Шкив коленвала'
+                    },
+                    {
+                        item_image: './images/engine/crankshaft_seal_mopar_04792317ab.jpg',
+                        item_code: '04792317AB (Mopar)',
+                        item_note: 'Сальник коленвала (ТОЛЬКО ОРИГИНАЛ)'
+                    },
+                    {
+                        item_image: './images/engine/connecting_rod_bearing_enginetech_bb103jstd.jpg',
+                        item_code: 'BB103JSTD (Enginetech)',
+                        item_note: 'Вкладыши коленвала (Стандарт)'
+                    },
+                ]},
+            {subtitle: 'Система смазки', id: 'lubrication_system', items: [
+                    {
+                        item_image: './images/engine/oil_pump_gasket_mopar_04648938ac.jpg',
+                        item_code: '04648938AC (Mopar)',
+                        item_note: 'Прокладка маслянного насоса'
+                    },
+                    {
+                        item_image: './images/engine/oil_pump_dnj_op1150.jpg',
+                        item_code: 'OP1150 (DNJ)',
+                        item_note: 'Маслянный насос'
+                    },
+                ]},
             {subtitle: 'Крепление двигателя', id: 'mount', items: [
                     {
                         item_image: './images/engine/motor_mount_anchor_3084.jpg',
@@ -410,7 +507,28 @@ export const DATA = [
                     },
 
                 ]},
-            {subtitle: 'Система очистки ОГ', id: ''},
+            {subtitle: 'Система очистки ОГ', id: 'exhaust_gas_cleaning_system', items: [
+                    {
+                        item_image: './images/engine/egr_valve_mopar_04861579ah.jpg',
+                        item_code: '04861579AH (Mopar)',
+                        item_note: 'Клапан EGR'
+                    },
+                    {
+                        item_image: './images/engine/egr_gasket_mopar_04891068ab.jpg',
+                        item_code: '04891068AB (Mopar)',
+                        item_note: 'Прокладка клапана EGR'
+                    },
+                    {
+                        item_image: './images/engine/egr_gasket_mopar_05277928.jpg',
+                        item_code: '05277928 (Mopar)',
+                        item_note: 'Прокладка клапана EGR'
+                    },
+                    {
+                        item_image: './images/engine/egr_gasket_fel-pro_70696.jpg',
+                        item_code: '70696 (Fel-pro)',
+                        item_note: 'Прокладка трубки клапана EGR'
+                    },
+                ]},
             {subtitle: 'Ременной привод', id: 'drive_pulleys', items: [
                     {
                         item_image: './images/engine/drive_pulleys_dayco_89007.jpg',
@@ -453,7 +571,33 @@ export const DATA = [
         title: 'Система охлаждения:',
         id: 'cooling_system',
         sub_titles: [
-            {subtitle: 'Термостат, прокладка', id: ''},
+            {subtitle: 'Термостат, прокладка', id: 'thermostat_pad', items: [
+                    {
+                        item_image: './images/maintenance/motorad_465-195.jpg',
+                        item_code: '465-195 (Motorad)',
+                        item_note: 'Термостат'
+                    },
+                    {
+                        item_image: './images/maintenance/thermostat_stant_14789.jpg',
+                        item_code: '14789 (Stant)',
+                        item_note: 'Термостат'
+                    },
+                    {
+                        item_image: './images/maintenance/thermostat_gates_33952.jpg',
+                        item_code: '33952 (Gates)',
+                        item_note: 'Термостат'
+                    },
+                    {
+                        item_image: './images/maintenance/thermostat_chrysler_68210217aa.jpg',
+                        item_code: '68210217AA (Chrysler)',
+                        item_note: 'Термостат'
+                    },
+                    {
+                        item_image: './images/engine/water_outlet_seal_fel-pro_35651.jpg',
+                        item_code: '35651 (Fel-pro)',
+                        item_note: 'Прокладка верхнего патрубка (термостата)'
+                    },
+                ]},
             {subtitle: 'Радиаторы маслянный, водяной', id: ''},
             {subtitle: 'Патрубки системы охлаждения', id: 'pipe_branch', items: [
                     {
@@ -664,6 +808,11 @@ export const DATA = [
                         item_code: 'D36мм-d16мм-2.5мм',
                         item_note: 'Шайбы в опору аммортизатора (с двух сторон)'
                     },
+                    {
+                        item_image: './images/chassis/support_spacer.jpg',
+                        item_code: '',
+                        item_note: 'Проставки для увеличения клиренса'
+                    },
                 ]},
             {subtitle: 'Амортизатор подвески', id: 'shock_absorber', items: [
                     {
@@ -677,6 +826,16 @@ export const DATA = [
                         item_note: ''
                     },
                     {
+                        item_image: './images/chassis/shiels_shock_absorber_dust_kyb_910023.jpg',
+                        item_code: '910023 (Kayaba)',
+                        item_note: 'Комплект (2 пыльника + 2 отбойника)'
+                    },
+                    {
+                        item_image: './images/chassis/shiels_shock_absorber_dust_moog_k201272.jpg',
+                        item_code: 'K201272 (Moog)',
+                        item_note: 'Комплект (пыльник + отбойник)'
+                    },
+                    {
                         item_image: './images/chassis/breakup_bolts_mopar_05013687ab.jpg',
                         item_code: '05013687 (Mopar)',
                         item_note: 'Развальные болты / Перед'
@@ -688,11 +847,6 @@ export const DATA = [
                     },
                 ]},
             {subtitle: 'Рычаги и тяги подвески', id: 'levers_and_pulls', items: [
-                    // {
-                    //     item_image: './images/chassis/front_suspension_arm_ball.jpg',
-                    //     item_code: '',
-                    //     item_note: 'шаровая опора'
-                    // },
                     {
                         item_image: './images/chassis/front_suspension_arm_big__silent_block.jpg',
                         item_code: 'CR0124RP (VTR)',
@@ -711,7 +865,7 @@ export const DATA = [
                     {
                         item_image: './images/chassis/rear_suspension_compression_link2.jpg',
                         item_code: '2975101 (Lemforder)',
-                        item_note: '"вилка" (1шт)'
+                        item_note: '"вилка" (2шт)'
                     },
                     {
                         item_image: './images/chassis/rear_suspension_cumber_link2.jpg',
@@ -721,7 +875,12 @@ export const DATA = [
                     {
                         item_image: './images/chassis/rear_suspension_link2.jpg',
                         item_code: '3475601 (Lemforder)',
-                        item_note: '"лодка" (1шт)'
+                        item_note: '"лодка" - плавающий сайлентблок (1шт)'
+                    },
+                    {
+                        item_image: './images/chassis/rear_beam_silent_block.jpg',
+                        item_code: '3475601 (Lemforder)',
+                        item_note: '"лодка" - балочный сайлентблок (1шт)'
                     },
                     {
                         item_image: './images/chassis/rear_suspension_tension_link2.jpg',
