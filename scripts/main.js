@@ -93,7 +93,7 @@ for(let i = 0; i < increaseElements.length; i++) {
     })
 }
 
-const infoAbout = document.getElementById('footer_info')
+const infoAbout = document.getElementById('about')
 
 // infoAbout.innerText = ABOUT
 
@@ -121,7 +121,8 @@ function addInfoAbout (items_head, item) {
                             <img style="height: 55px" src="./images/icons8-youtube-в-квадрате-96.png" alt="youtube" title="YouTube">
                         </a>
                     </div>
-                </div>
+                </div>        
+                <div class="donate"><a href="https://donate.stream/donate_6368cb89e59ec" target="_blank">Поддержать платформу &#127866;</a></div>
             </div>
         </div>`)
 }

@@ -8,11 +8,11 @@ export const DATA = [
         title: 'Детали для ТО:',
         id: 'maintenance',
         sub_titles: [
-            {subtitle: 'ВАЖНО!!! Заправочные емкости', id: 'refueling tanks', items: [
+            {subtitle: 'ВАЖНО!!!', id: 'refueling tanks', items: [
                     {
                         item_image: './images/maintenance/refueling_tanks.jpg',
                         item_code: '',
-                        item_note: ''
+                        item_note: 'Заправочные емкости'
                     },
                 ]},
             {subtitle: 'Фильтр маслянный', id: 'oil_filter', items: [
