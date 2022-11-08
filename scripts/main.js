@@ -129,7 +129,7 @@ function addInfoAbout (items_head, item) {
                         Поддержать платформу     
                 </div>
                 <div class="donate">Скачать приложение
-                    <a href="./download/app-release_2.5_2022-11-06.apkk" download="">
+                    <a href="./download/app-release_2.5_2022-11-06.apk" download="">
                         <img class="download_btn" src="./images/download_android.png" alt="скачать"/>
                     </a>
                 </div>
