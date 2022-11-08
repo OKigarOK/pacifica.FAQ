@@ -130,13 +130,16 @@ h1 {
 
 .donate {
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bolder;
-    padding: 5px;
+    padding: 0 5px;
     text-align: center;
     border: 2px solid wheat;
     border-radius: 10px;
     margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 a {
@@ -188,4 +191,15 @@ a {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.download_btn {
+    margin-top: 5px;
+    height: 40px;
+}
+
+.for_beer_btn {
+    margin-top: 5px;
+    border-radius: 5px;
+    height: 60px;
 }

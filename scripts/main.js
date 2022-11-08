@@ -100,7 +100,7 @@ const infoAbout = document.getElementById('about')
 function addInfoAbout (items_head, item) {
     items_head.insertAdjacentHTML('beforeend', `
         <div class="list_item">
-        <button class="accordion">О приложении</button>
+        <button class="accordion">О платформе</button>
             <div class="panel">
                 <div class="about">${item}</div>
                 <div class="contacts">
@@ -122,7 +122,17 @@ function addInfoAbout (items_head, item) {
                         </a>
                     </div>
                 </div>        
-                <div class="donate"><a href="https://donate.stream/donate_6368cb89e59ec" target="_blank">Поддержать платформу &#127866;</a></div>
+                <div class="donate">
+                        <a href="https://donate.stream/donate_6368cb89e59ec" target="_blank">
+                            <img class="for_beer_btn" src="./images/for_beer.jpg" alt="">
+                        </a> 
+                        Поддержать платформу     
+                </div>
+                <div class="donate">Скачать приложение
+                    <a href="./download/app-release_2.5_2022-11-06.apkk" download="">
+                        <img class="download_btn" src="./images/download_android.png" alt="скачать"/>
+                    </a>
+                </div>
             </div>
         </div>`)
 }
