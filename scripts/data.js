@@ -149,44 +149,44 @@ export const DATA = [
                         item_note: ''
                     }
                 ]},
-            {subtitle: 'Термостат', id: 'thermostat', items: [
-                    {
-                        item_image: './images/maintenance/motorad_465-195.jpg',
-                        item_code: '465-195 (Motorad)',
-                        item_note: 'Термостат'
-                    },
-                    {
-                        item_image: './images/maintenance/thermostat_stant_14789.jpg',
-                        item_code: '14789 (Stant)',
-                        item_note: 'Термостат'
-                    },
-                    {
-                        item_image: './images/maintenance/thermostat_gates_33952.jpg',
-                        item_code: '33952 (Gates)',
-                        item_note: 'Термостат'
-                    },
-                    {
-                        item_image: './images/maintenance/thermostat_chrysler_68210217aa.jpg',
-                        item_code: '68210217AA (Chrysler)',
-                        item_note: 'Термостат'
-                    },
-                    {
-                        item_image: './images/cooling_system/thermostat_housting_dorman_902-698.jpg',
-                        item_code: '902-698 (Dorman)',
-                        item_note: 'верхний патрубок (корпус термостата)'
-                    },
-                    {
-                        item_image: './images/engine/water_outlet_seal_fel-pro_35651.jpg',
-                        item_code: '35651 (Fel-pro)',
-                        item_note: 'Прокладка верхнего патрубка (термостата)'
-                    },
-                    {
-                        item_image: './images/cooling_system/thermostat_housing_mopar_04781387aa.jpg',
-                        item_code: '04781387AA (Mopar)',
-                        item_note: 'верхний патрубок (корпус термостата)'
-                    },
-
-                ]},
+            // {subtitle: 'Термостат', id: 'thermostat', items: [
+            //         {
+            //             item_image: './images/maintenance/motorad_465-195.jpg',
+            //             item_code: '465-195 (Motorad)',
+            //             item_note: 'Термостат'
+            //         },
+            //         {
+            //             item_image: './images/maintenance/thermostat_stant_14789.jpg',
+            //             item_code: '14789 (Stant)',
+            //             item_note: 'Термостат'
+            //         },
+            //         {
+            //             item_image: './images/maintenance/thermostat_gates_33952.jpg',
+            //             item_code: '33952 (Gates)',
+            //             item_note: 'Термостат'
+            //         },
+            //         {
+            //             item_image: './images/maintenance/thermostat_chrysler_68210217aa.jpg',
+            //             item_code: '68210217AA (Chrysler)',
+            //             item_note: 'Термостат'
+            //         },
+            //         {
+            //             item_image: './images/cooling_system/thermostat_housting_dorman_902-698.jpg',
+            //             item_code: '902-698 (Dorman)',
+            //             item_note: 'верхний патрубок (корпус термостата)'
+            //         },
+            //         {
+            //             item_image: './images/engine/water_outlet_seal_fel-pro_35651.jpg',
+            //             item_code: '35651 (Fel-pro)',
+            //             item_note: 'Прокладка верхнего патрубка (термостата)'
+            //         },
+            //         {
+            //             item_image: './images/cooling_system/thermostat_housing_mopar_04781387aa.jpg',
+            //             item_code: '04781387AA (Mopar)',
+            //             item_note: 'верхний патрубок (корпус термостата)'
+            //         },
+            //
+            //     ]},
             {subtitle: 'Пробка сливного отверстия', id: 'oil_drain', items: [
                     {
                         item_image: './images/maintenance/oil_drain_mopar_06507741aa.jpg',
@@ -195,54 +195,7 @@ export const DATA = [
                     }
                 ]},
             {subtitle: 'Щетки стеклоочистителя', id: 'wipers'},
-            {subtitle: 'Насос системы охлаждения', id: 'water_pump', items: [
-                    {
-                        item_image: './images/maintenance/water_pump_mopar_V9900085.jpg',
-                        item_code: 'V9900095 (Mopar)',
-                        item_note: 'мелкая помпа'
-                    },
-                    {
-                        item_image: './images/maintenance/water_pump_gmb_gwcr35a.jpeg',
-                        item_code: 'GWCR35A (GMB)',
-                        item_note: 'мелкая помпа'
-                    },
-                    {
-                        item_image: './images/maintenance/water_pump_airtex_7162.jpg',
-                        item_code: '7162 (Airtex)',
-                        item_note: 'мелкая помпа'
-                    },
-                    {
-                        item_image: './images/maintenance/water_pump_patron_pwp1018.jpg',
-                        item_code: 'PWP1018 (Patron)',
-                        item_note: 'мелкая помпа'
-                    },
-                    {
-                        item_image: './images/maintenance/water_pump_mopar_04792968ad.jpg',
-                        item_code: '04792968AD (Mopar)',
-                        item_note: 'большая помпа'
-                    },
-                    {
-                        item_image: './images/maintenance/water_pump_gates_43542.jpg',
-                        item_code: '43542 (Gates)',
-                        item_note: 'большая помпа'
-                    },
-                    {
-                        item_image: './images/maintenance/water_pump_gmb-gwcr43a.jpg',
-                        item_code: 'GWCR43A (GMB)',
-                        item_note: 'большая помпа'
-                    },
-                    {
-                        item_image: './images/maintenance/water_pump_airtex_1835.jpg',
-                        item_code: '1835 (Airtex)',
-                        item_note: 'большая помпа'
-                    },
-                    {
-                        item_image: './images/maintenance/water_pump_patron_pwp1217.jpg',
-                        item_code: 'PWP1217 (Patron)',
-                        item_note: 'большая помпа'
-                    },
-
-                ]},
+            // {subtitle: 'Насос системы охлаждения', id: ''},
             {subtitle: 'Колодки тормозные', id: 'break_pads', items: [
                     {
                         item_image: './images/maintenance/break_pads_patron_pbp7000.jpg',
@@ -346,7 +299,7 @@ export const DATA = [
                         item_note: 'Прокладка дроссельной заслонки'
                     },
                 ]},
-            {subtitle: 'Механизм газораспределения', id: 'timing', items: [
+            {subtitle: 'Механизм газораспределения ГРМ', id: 'timing', items: [
                     {
                         item_image: './images/engine/timing_kit_gates_tck295a.jpg',
                         item_code: 'TCK295A (Gates)',
@@ -362,16 +315,57 @@ export const DATA = [
                         item_code: 'TT129 (Enginetech)',
                         item_note: 'Натяжитель ГРМ'
                     },
-                    // {
-                    //     item_image: './images/engine/timing_belt_tensioneer_dayco_atb2638.jpg',
-                    //     item_code: 'ATB2638 (Dayco)',
-                    //     item_note: 'Натяжитель ГРМ'
-                    // },
+                    {
+                        item_image: './images/engine/timing_belt_tensioneer_gates_t43217.jpg',
+                        item_code: 'T43217 (Gates)',
+                        item_note: 'Натяжитель ГРМ'
+                    },
+                    {
+                        item_image: './images/engine/timing_belt_tensioneer_mopar_04892109aa.jpg',
+                        item_code: '04892109AA (Mopar)',
+                        item_note: 'Натяжитель ГРМ'
+                    },
+                    {
+                        item_image: './images/engine/timing_belt_tensioneer_dayco_atb2638.jpg',
+                        item_code: 'ATB2638 (Dayco)',
+                        item_note: 'Натяжитель ГРМ'
+                    },
+                    {
+                        item_image: './images/engine/timing_belt_tensioneer_dayco_85048.jpg',
+                        item_code: '85048 (Dayco)',
+                        item_note: 'Натяжитель ГРМ'
+                    },
+                    {
+                        item_image: './images/engine/timing_belt_tensioneer_dorman_420181.jpg',
+                        item_code: '420181 (Dorman)',
+                        item_note: 'Натяжитель ГРМ'
+                    },
                     {
                         item_image: './images/engine/tensioner_belt_gmb_gt90010.jpg',
                         item_code: 'GT90010 (GMB)',
                         item_note: 'Ролик ГРМ (без площадки)'
                     },
+                    {
+                        item_image: './images/engine/tensioner_belt_dayco_atb2549.jpg',
+                        item_code: 'ATB2549 (Dayco)',
+                        item_note: 'Ролик ГРМ (без площадки)'
+                    },
+                    {
+                        item_image: './images/engine/tensioner_belt_ina_532022710.jpg',
+                        item_code: '532022710 (Ina)',
+                        item_note: 'Ролик ГРМ (без площадки)'
+                    },
+                    {
+                        item_image: './images/engine/timing_cover_gasket_mopar_04483443.jpg',
+                        item_code: '04483443 (Mopar)',
+                        item_note: 'Прокладка крышки ГРМ (2шт)'
+                    },
+                    {
+                        item_image: './images/engine/water_pump_gasket_mopar_04659430ab.jpg',
+                        item_code: '04659430AB (Mopar)',
+                        item_note: 'Прокладка водяного насоса'
+                    },
+
                     {
                         item_image: './images/engine/',
                         item_code: '',
@@ -380,18 +374,8 @@ export const DATA = [
                 ]},
             {subtitle: 'Блок-картер', id: 'crankcase_block', items: [
                     {
-                        item_image: './images/engine/coolant_temperature_sensor_mopar_05269870ab.jpg',
-                        item_code: '05269870AB (Mopar)',
-                        item_note: 'Датчик температуры охлаждающей жидкости'
-                    },
-                    {
-                        item_image: './images/engine/valve_pcv_mopar_04792962aa.jpg',
-                        item_code: '04792962AA (Mopar)',
-                        item_note: 'Клапан PCV'
-                    },
-                    {
                         item_image: './images/engine/oil_pressure_sender_standart_ps287t.jpg',
-                        item_code: 'PS287T (Standart)',
+                        item_code: 'PS287T (Standart Motor Products)',
                         item_note: 'Датчик давления масла'
                     },
                     {
@@ -408,6 +392,11 @@ export const DATA = [
                         item_image: './images/engine/oil_dipstick_chrysler_04792670ab.jpg',
                         item_code: '04792670AB (Chrysler)',
                         item_note: 'Маслянный щуп'
+                    },
+                    {
+                        item_image: './images/engine/valve_pcv_mopar_04792962aa.jpg',
+                        item_code: '04792962AA (Mopar)',
+                        item_note: 'Клапан PCV'
                     },
                 ]},
             {subtitle: 'Кривошипношатунный механизм', id: 'crank_mechanism', items: [
@@ -444,7 +433,7 @@ export const DATA = [
                         item_note: 'Маслянный насос'
                     },
                 ]},
-            {subtitle: 'Крепление двигателя', id: 'mount', items: [
+            {subtitle: 'Крепление двигателя (подушки)', id: 'mount', items: [
                     {
                         item_image: './images/engine/motor_mount_anchor_3084.jpg',
                         item_code: '3084 (Anchor)',
@@ -507,7 +496,7 @@ export const DATA = [
                     },
 
                 ]},
-            {subtitle: 'Система очистки ОГ', id: 'exhaust_gas_cleaning_system', items: [
+            {subtitle: 'Система очистки ОГ (EGR)', id: 'exhaust_gas_cleaning_system', items: [
                     {
                         item_image: './images/engine/egr_valve_mopar_04861579ah.jpg',
                         item_code: '04861579AH (Mopar)',
@@ -563,8 +552,14 @@ export const DATA = [
             {subtitle: 'Бак топливный', id: ''},
             {subtitle: 'Клапан', id: ''},
             {subtitle: 'Датчик уровня топлива', id: ''},
-            {subtitle: 'Регулятор давления подачи оплива', id: ''},
-            {subtitle: 'Насос топливный, комплектующие', id: ''},
+            {subtitle: 'Регулятор давления подачи топлива', id: ''},
+            {subtitle: 'Насос топливный, комплектующие', id: 'fuel_pump', items: [
+                    {
+                        item_image: './images/fuel_system/fuel_pump_module_mopar_cbb2f440.jpg',
+                        item_code: 'CBB2F440 (Mopar)',
+                        item_note: 'Модуль топливного насоса'
+                    },
+                ]},
         ]
     },
     {
@@ -598,7 +593,78 @@ export const DATA = [
                         item_note: 'Прокладка верхнего патрубка (термостата)'
                     },
                 ]},
-            {subtitle: 'Радиаторы маслянный, водяной', id: ''},
+            {subtitle: 'Радиаторы маслянный, водяной', id: 'cooling_radiators', items: [
+                    {
+                        item_image: './images/cooling_system/coolant_reservoir_mopar_4880498ac.jpeg',
+                        item_code: '4880498AC (Mopar)',
+                        item_note: 'Расширительный бачок'
+                    },
+                    {
+                        item_image: './images/cooling_system/coolant_reservoir_polcar_2460zb-2.jpg',
+                        item_code: '2460ZB-2 (Polcar)',
+                        item_note: 'Расширительный бачок'
+                    },
+                    {
+                        item_image: './images/cooling_system/main_radiator_denso_drm06001.jpg',
+                        item_code: 'DRM06001 (Denso)',
+                        item_note: 'Основной радиатор'
+                    },
+                    {
+                        item_image: './images/cooling_system/main_radiator_nissens_61028.JPG',
+                        item_code: '61028 (Nissens)',
+                        item_note: 'Основной радиатор'
+                    },
+                    {
+                        item_image: './images/cooling_system/main_radiator_polcar_2460081.jpg',
+                        item_code: '2460081 (Polcar/SRLine)',
+                        item_note: 'Основной радиатор'
+                    },
+                    {
+                        item_image: './images/cooling_system/main_radiator_sat_cr0009.jpg',
+                        item_code: 'CR0009 (Sat)',
+                        item_note: 'Основной радиатор (Редкостное ГАВНО)'
+                    },
+                    {
+                        item_image: './images/cooling_system/main_radiator_stellox_10-26824-SX.JPG',
+                        item_code: '10-26824-SX (Stellox)',
+                        item_note: 'Основной радиатор'
+                    },
+                    {
+                        item_image: './images/cooling_system/main_radiator_stellox_10-26890-SX.jpg',
+                        item_code: '10-26890-SX (Stellox)',
+                        item_note: 'Основной радиатор'
+                    },
+                    {
+                        item_image: './images/cooling_system/main_radiator_termal_310993.jpg',
+                        item_code: '310993 (Termal)',
+                        item_note: 'Основной радиатор'
+                    },
+                    {
+                        item_image: './images/cooling_system/oil_cooler_mopar_05102433aa.jpg',
+                        item_code: '05102433AA (Mopar)',
+                        item_note: 'Маслянный радиатор (АКПП)'
+                    },
+                    {
+                        item_image: './images/cooling_system/oil_cooler_dorman_918208.jpg',
+                        item_code: '918208 (Dorman)',
+                        item_note: 'Маслянный радиатор (АКПП)'
+                    },
+                    {
+                        item_image: './images/cooling_system/ac_condenser_nissens_94906.jpg',
+                        item_code: '94906 (Nissens)',
+                        item_note: 'Радиатор кондиционера'
+                    },
+                    {
+                        item_image: './images/cooling_system/ac_condenser_denso_4770816.jpg',
+                        item_code: '4770816 (Denso)',
+                        item_note: 'Радиатор кондиционера'
+                    },
+                    {
+                        item_image: './images/cooling_system/ac_condenser_thermotec_ktt110207.jpg',
+                        item_code: 'KTT110207 (Thermotec)',
+                        item_note: 'Радиатор кондиционера'
+                    },
+                ]},
             {subtitle: 'Патрубки системы охлаждения', id: 'pipe_branch', items: [
                     {
                         item_image: './images/cooling_system/radiator_hose_dayco_72215.jpg',
@@ -641,9 +707,71 @@ export const DATA = [
                         item_note: 'Прокладка нижнего патрубка'
                     },
                 ]},
-            {subtitle: 'Выключатель, датчик', id: ''},
+            {subtitle: 'Выключатель, датчик ОЖ', id: 'coolant_sensor', items: [
+                    {
+                        item_image: './images/cooling_system/coolant_temperature_sensor_mopar_05269870ab.jpg',
+                        item_code: '05269870AB (Mopar)',
+                        item_note: 'Датчик температуры охлаждающей жидкости'
+                    },
+                    {
+                        item_image: './images/cooling_system/coolant_temperature_sensor_standart_tx98t.jpg',
+                        item_code: 'TX98T (Standart Motor Products)',
+                        item_note: 'Датчик температуры охлаждающей жидкости'
+                    },
+                ]},
             {subtitle: 'Вентилятор охлаждения радиатора', id: ''},
-            {subtitle: 'Насос системы охлаждения, прокладка', id: ''},
+            {subtitle: 'Насос системы охлаждения (помпа)', id: 'water_pump', items: [
+                    {
+                        item_image: './images/cooling_system/water_pump_mopar_V9900085.jpg',
+                        item_code: 'V9900095 (Mopar)',
+                        item_note: 'мелкая помпа'
+                    },
+                    {
+                        item_image: './images/cooling_system/water_pump_gmb_gwcr35a.jpeg',
+                        item_code: 'GWCR35A (GMB)',
+                        item_note: 'мелкая помпа'
+                    },
+                    {
+                        item_image: './images/cooling_system/water_pump_airtex_7162.jpg',
+                        item_code: '7162 (Airtex)',
+                        item_note: 'мелкая помпа'
+                    },
+                    {
+                        item_image: './images/cooling_system/water_pump_dayco_dp595.jpg',
+                        item_code: 'DP595 (Dayco)',
+                        item_note: 'мелкая помпа'
+                    },
+                    {
+                        item_image: './images/cooling_system/water_pump_patron_pwp1018.jpg',
+                        item_code: 'PWP1018 (Patron)',
+                        item_note: 'мелкая помпа'
+                    },
+                    {
+                        item_image: './images/cooling_system/water_pump_mopar_04792968ad.jpg',
+                        item_code: '04792968AD (Mopar)',
+                        item_note: 'большая помпа'
+                    },
+                    {
+                        item_image: './images/cooling_system/water_pump_gates_43542.jpg',
+                        item_code: '43542 (Gates)',
+                        item_note: 'большая помпа'
+                    },
+                    {
+                        item_image: './images/cooling_system/water_pump_gmb-gwcr43a.jpg',
+                        item_code: 'GWCR43A (GMB)',
+                        item_note: 'большая помпа'
+                    },
+                    {
+                        item_image: './images/cooling_system/water_pump_airtex_1835.jpg',
+                        item_code: '1835 (Airtex)',
+                        item_note: 'большая помпа'
+                    },
+                    {
+                        item_image: './images/cooling_system/water_pump_patron_pwp1217.jpg',
+                        item_code: 'PWP1217 (Patron)',
+                        item_note: 'большая помпа'
+                    },
+                ]},
         ]
     },
     {
@@ -674,7 +802,7 @@ export const DATA = [
                     },
 
                 ]},
-            {subtitle: 'Датчик кислорода', id: 'oxygen', items: [
+            {subtitle: 'Датчик кислорода (лямбда-зонд)', id: 'oxygen', items: [
                     {
                         item_image: './images/exhaust_system/oxygen_sensor1_2003_mopar_04727446ad.jpg',
                         item_code: '04727446AD (Mopar)',

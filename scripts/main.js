@@ -78,8 +78,8 @@ for(let i = 0; i < increaseElements.length; i++) {
         const increaseImage = document.getElementsByClassName('item_image')
         increaseImage[0].style.width = '100%'
         modal.style.display = "block";
-        modalBackground.style.background = 'rgba(0,0,0)';
-        modalBackground.style.background = 'rgba(0,0,0,0.75)';
+        // modalBackground.style.background = 'rgba(0,0,0)';
+        // modalBackground.style.background = 'rgba(0,0,0,0.75)';
         modalBackground.style.pointerEvents = 'none';
         document.body.style.overflow = "hidden";
     })
@@ -87,7 +87,7 @@ for(let i = 0; i < increaseElements.length; i++) {
     modal.addEventListener('click', () => {
         modal.style.display = "none";
         modal.innerHTML = '';
-        modalBackground.style.background = 'rgba(0,0,0,0)';
+        // modalBackground.style.background = 'rgba(0,0,0,0)';
         modalBackground.style.pointerEvents = 'all';
         document.body.style.overflow = "visible";
     })
