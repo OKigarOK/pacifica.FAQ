@@ -14,7 +14,11 @@ body {
     /*-khtml-user-select: none;*/
     user-select: none;
     background: black;
+    /*PACIFICA*/
     background: url('../images/chrysler_pacifica_bg.jpg') fixed no-repeat;
+    /*SNOW*/
+    /*background: url('../images/fon_snow5.gif') fixed no-repeat;*/
+
     background-size: cover;
     background-position: center;
     color: whitesmoke;
@@ -26,6 +30,7 @@ body {
 .header_title {
     display: flex;
     justify-content: space-between;
+
 }
 
 .update,
@@ -41,6 +46,9 @@ body {
     min-width: 360px;
     padding: 5px 5px 0 5px;
     margin: 0 auto;
+    background: url('../images/autumn_2.gif') fixed;
+    /*opacity: 0.85;*/
+    /*background: url('../images/snow_gif2.gif') fixed;*/
 }
 
 .logo {
@@ -131,7 +139,7 @@ h1 {
 .donate {
     color: white;
     font-size: 15px;
-    font-weight: bolder;
+    /*font-weight: bolder;*/
     padding: 0 5px;
     text-align: center;
     border: 2px solid wheat;

@@ -14,11 +14,16 @@ export const DATA = [
                         item_code: '',
                         item_note: 'Заправочные емкости'
                     },
+                    {
+                        item_image: './images/maintenance/clearance.jpg',
+                        item_code: '',
+                        item_note: 'Высоты в стоке'
+                    },
                 ]},
             {subtitle: 'Фильтр маслянный', id: 'oil_filter', items: [
                     {
                         item_image: './images/maintenance/oil_filter_mopar_05281090.jpg',
-                        item_code: '05281090 (Mopar)',
+                        item_code: '05281090AB (Mopar)',
                         item_note: ''
                     },
                     {
@@ -86,6 +91,16 @@ export const DATA = [
                         item_image: './images/maintenance/trans_filter_fram_ft1122a.jpg',
                         item_code: 'FT1122A (Fram)',
                         item_note: 'в комплекте пробковая прокладка'
+                    },
+                    {
+                        item_image: './images/maintenance/trans_filter_patron_pf5001.jpg',
+                        item_code: 'PF5001 (Patron)',
+                        item_note: 'в комплекте прокладка'
+                    },
+                    {
+                        item_image: './images/maintenance/trans_filter_asakashi_jt398k.jpg',
+                        item_code: 'JT398K (JS Asakashi)',
+                        item_note: 'в комплекте прокладка'
                     }
                 ]},
             {subtitle: 'Свечи зажигания', id: 'spark', items: [
@@ -134,8 +149,8 @@ export const DATA = [
                 ]},
             {subtitle: 'Ремень ГРМ', id: 'belt_timing', items: [
                     {
-                        item_image: './images/maintenance/belt_timing_gates_5674XS.jpg',
-                        item_code: '5674XS (Gates)',
+                        item_image: './images/maintenance/belt_timing_mopar_04792353.jpg',
+                        item_code: '04792353 (Mopar)',
                         item_note: ''
                     },
                     {
@@ -144,10 +159,15 @@ export const DATA = [
                         item_note: ''
                     },
                     {
-                        item_image: './images/maintenance/belt_timing_mopar_04792353.jpg',
-                        item_code: '04792353 (Mopar)',
+                        item_image: './images/maintenance/belt_timing_gates_5674XS.jpg',
+                        item_code: '5674XS (Gates)',
                         item_note: ''
-                    }
+                    },
+                    {
+                        item_image: './images/maintenance/timing_belt.jpg',
+                        item_code: '',
+                        item_note: ''
+                    },
                 ]},
             // {subtitle: 'Термостат', id: 'thermostat', items: [
             //         {
@@ -194,7 +214,18 @@ export const DATA = [
                         item_note: 'M14-1.5'
                     }
                 ]},
-            {subtitle: 'Щетки стеклоочистителя', id: 'wipers'},
+            {subtitle: 'Щетки стеклоочистителя', id: 'wipers', items: [
+                    {
+                        item_image: './images/maintenance/wipers_front.jpg',
+                        item_code: 'Передние',
+                        item_note: 'Размеры 22" (сток) - 24" (max)'
+                    },
+                    {
+                        item_image: './images/maintenance/wiper_rear.jpg',
+                        item_code: 'Задний',
+                        item_note: 'Размеры 13" (сток) - 15" (max)'
+                    },
+                ]},
             // {subtitle: 'Насос системы охлаждения', id: ''},
             {subtitle: 'Колодки тормозные', id: 'break_pads', items: [
                     {
@@ -245,7 +276,46 @@ export const DATA = [
                         item_code: 'VS50248 (Mahle)',
                         item_note: 'Прокладки клапанной крышки'
                     },
-
+                    {
+                        item_image: './images/engine/gaskets_dnj_vc143g.jpg',
+                        item_code: 'VC143G (DNJ)',
+                        item_note: 'Прокладки клапанной крышки'
+                    },
+                    {
+                        item_image: './images/engine/intake_plenum_gasket_mahle__ms19537.jpg',
+                        item_code: 'MS19537 (Mahle)',
+                        item_note: 'Прокладка впускного коллектора'
+                    },
+                    {
+                        item_image: './images/engine/intake_plenum_gasket_dnj_mg1150.webp',
+                        item_code: 'MG1150 (DNJ)',
+                        item_note: 'Прокладка впускного коллектора'
+                    },
+                    {
+                        item_image: './images/engine/throttle_body_gasket_fel-pro_61230.jpg',
+                        item_code: '61230 (Fel-pro)',
+                        item_note: 'Прокладка дроссельной заслонки'
+                    },
+                    {
+                        item_image: './images/engine/throttle_body_gasket_mahle_g31666.jpg',
+                        item_code: 'G31666 (Mahle)',
+                        item_note: 'Прокладка дроссельной заслонки'
+                    },
+                    {
+                        item_image: './images/engine/intake_manifold_gasket_mahle_ms16210.jpg',
+                        item_code: 'MS16210 (Mahle)',
+                        item_note: 'Прокладки коллектора ДВС (2шт)'
+                    },
+                    {
+                        item_image: './images/engine/gasket_set_fel-pro_ms921651.jpg',
+                        item_code: 'MS921651 (Fel-pro)',
+                        item_note: 'Комплект прокладок коллектора'
+                    },
+                    {
+                        item_image: './images/engine/intake_manifold_gasket_dnj_ig1150.jpg',
+                        item_code: 'IG1150 (DNJ)',
+                        item_note: 'Комплект прокладок коллектора'
+                    },
                     {
                         item_image: './images/engine/water_outlet_seal_fel-pro_35631.jpg',
                         item_code: '35631 (Fel-pro)',
@@ -255,6 +325,26 @@ export const DATA = [
                         item_image: './images/engine/water_outlet_seal_fel-pro_35651.jpg',
                         item_code: '35651 (Fel-pro)',
                         item_note: 'Прокладка верхнего патрубка ОЖ (термостат)'
+                    },
+                    {
+                        item_image: './images/engine/exhaust_manifold_gasket_dnj_eg143.jpg',
+                        item_code: 'EG143 (DNJ)',
+                        item_note: 'Комплект прокладок выпускного коллектора'
+                    },
+                    {
+                        item_image: './images/engine/exhaust_manifold_gasket_fel-pro_ms95446.jpg',
+                        item_code: 'MS95446 (Fel-pro)',
+                        item_note: 'Комплект прокладок выпускного коллектора'
+                    },
+                    {
+                        item_image: './images/engine/exhaust_manifold_gasket_mopar_04648915aa.jpg',
+                        item_code: '04648915AA (Mopar)',
+                        item_note: 'Прокладка/уплотнение фланца трубы'
+                    },
+                    {
+                        item_image: './images/engine/exhaust_manifold_gasket_victor-reinz_711366800.jpg',
+                        item_code: '711366800 (Victor Reinz)',
+                        item_note: 'Прокладка/уплотнение фланца трубы'
                     },
                     {
                         item_image: './images/engine/oil_pan_gasket_mopar_04792663aa.jpg',
@@ -273,31 +363,7 @@ export const DATA = [
                         item_code: '04606487AB (Mopar)',
                         item_note: 'Датчик температуры воздуха'
                     },
-                    {
-                        item_image: './images/engine/intake_plenum_gasket_mahle__ms19537.jpg',
-                        item_code: 'MS19537 (Mahle)',
-                        item_note: 'Прокладка впускного коллектора'
-                    },
-                    {
-                        item_image: './images/engine/intake_manifold_gasket_mahle_ms16210.jpg',
-                        item_code: 'MS16210 (Mahle)',
-                        item_note: 'Прокладки коллектора ДВС (2шт)'
-                    },
-                    {
-                        item_image: './images/engine/gasket_set_fel-pro_ms921651.jpg',
-                        item_code: 'MS921651 (Fel-pro)',
-                        item_note: 'Комплект прокладок коллектора'
-                    },
-                    {
-                        item_image: './images/engine/throttle_body_gasket_fel-pro_61230.jpg',
-                        item_code: '61230 (Fel-pro)',
-                        item_note: 'Прокладка дроссельной заслонки'
-                    },
-                    {
-                        item_image: './images/engine/throttle_body_gasket_mahle_g31666.jpg',
-                        item_code: 'G31666 (Mahle)',
-                        item_note: 'Прокладка дроссельной заслонки'
-                    },
+
                 ]},
             {subtitle: 'Механизм газораспределения ГРМ', id: 'timing', items: [
                     {
@@ -401,16 +467,6 @@ export const DATA = [
                 ]},
             {subtitle: 'Кривошипношатунный механизм', id: 'crank_mechanism', items: [
                     {
-                        item_image: './images/engine/harmonic_balanser_mopar_04792989aa.jpg',
-                        item_code: '04792989AA (Mopar)',
-                        item_note: 'Шкив коленвала'
-                    },
-                    {
-                        item_image: './images/engine/harmonic_balanser_nty_rkp-ch-021.jpg',
-                        item_code: 'RKP-CH-021 (NTY)',
-                        item_note: 'Шкив коленвала'
-                    },
-                    {
                         item_image: './images/engine/crankshaft_seal_mopar_04792317ab.jpg',
                         item_code: '04792317AB (Mopar)',
                         item_note: 'Сальник коленвала (ТОЛЬКО ОРИГИНАЛ)'
@@ -420,8 +476,38 @@ export const DATA = [
                         item_code: 'BB103JSTD (Enginetech)',
                         item_note: 'Вкладыши коленвала (Стандарт)'
                     },
+                    {
+                        item_image: './images/engine/connecting_rod_bearing_king_cr6810si.png',
+                        item_code: 'CR6810SI (King)',
+                        item_note: 'Вкладыши коленвала (Стандарт)'
+                    },
+                    {
+                        item_image: './images/engine/connecting_rod_bearing_dnj_rb1135.jpg',
+                        item_code: 'RB1135 (DNJ)',
+                        item_note: 'Вкладыши коленвала (Стандарт)'
+                    },
+                    {
+                        item_image: './images/engine/connecting_rod_bearing_sealed_power_61920ra.jpg',
+                        item_code: '61920RA (Sealed Power)',
+                        item_note: 'Вкладыши коленвала (Стандарт)'
+                    },
+                    {
+                        item_image: './images/engine/main_bearings_dnj_mb143.webp',
+                        item_code: 'MB143 (DNJ)',
+                        item_note: 'Вкладыши коренные (Стандарт)'
+                    },
+                    {
+                        item_image: './images/engine/main_bearings_enginetech_bc106j.jpg',
+                        item_code: 'BC106J (Enginetech)',
+                        item_note: 'Вкладыши коренные (Стандарт)'
+                    },
+                    {
+                        item_image: './images/engine/crankshaft_ring_dnj_tw140.jpg',
+                        item_code: 'TW140 (DNJ)',
+                        item_note: 'Упорное полукольцо коленвала'
+                    },
                 ]},
-            {subtitle: 'Система смазки', id: 'lubrication_system', items: [
+            {subtitle: 'Система смазки (насос)', id: 'lubrication_system', items: [
                     {
                         item_image: './images/engine/oil_pump_gasket_mopar_04648938ac.jpg',
                         item_code: '04648938AC (Mopar)',
@@ -460,9 +546,19 @@ export const DATA = [
                         item_note: 'подушка перед/зад'
                     },
                     {
+                        item_image: './images/engine/motor_mount_febest_crmpacfr.jpeg',
+                        item_code: 'CRM-PACFR (Febest)',
+                        item_note: 'подушка перед/зад'
+                    },
+                    {
                         item_image: './images/engine/motor_mount_patron_pse3273.jpg',
                         item_code: 'PSE3273 (Patron)',
                         item_note: 'подушка MB (аналог)'
+                    },
+                    {
+                        item_image: './images/engine/strut_mount_westar_EM3095.jpg',
+                        item_code: 'EM3095 (WESTAR)',
+                        item_note: 'подушка АКПП'
                     },
                     {
                         item_image: './images/engine/strut_mount_dea_A5306.jpg',
@@ -472,11 +568,6 @@ export const DATA = [
                     {
                         item_image: './images/engine/strut_mount_skp_SKMA5306.jpg',
                         item_code: 'SKMA5306 (SKP)',
-                        item_note: 'подушка АКПП'
-                    },
-                    {
-                        item_image: './images/engine/strut_mount_westar_EM3095.jpg',
-                        item_code: 'EM3095 (WESTAR)',
                         item_note: 'подушка АКПП'
                     },
                     {
@@ -490,11 +581,20 @@ export const DATA = [
                         item_note: 'боковая подушка'
                     },
                     {
+                        item_image: './images/engine/motor_mount_anchor_3181.jpg',
+                        item_code: '3181 (Anchor)',
+                        item_note: 'боковая подушка'
+                    },
+                    {
+                        item_image: './images/engine/motor_mount_nty_zpsch074.jpg',
+                        item_code: 'ZPSCH074 (NTY)',
+                        item_note: 'боковая подушка'
+                    },
+                    {
                         item_image: './images/engine/cartrige_mount_febest_crmpacrh.jpeg',
-                        item_code: 'CRMPACRH (Febest)',
+                        item_code: 'CRM-PACRH (Febest)',
                         item_note: 'картридж боковой подушки'
                     },
-
                 ]},
             {subtitle: 'Система очистки ОГ (EGR)', id: 'exhaust_gas_cleaning_system', items: [
                     {
@@ -503,9 +603,9 @@ export const DATA = [
                         item_note: 'Клапан EGR'
                     },
                     {
-                        item_image: './images/engine/egr_gasket_mopar_04891068ab.jpg',
-                        item_code: '04891068AB (Mopar)',
-                        item_note: 'Прокладка клапана EGR'
+                        item_image: './images/engine/egr_valve_mopar_04861635ag.jpg',
+                        item_code: '04861635AG (Mopar)',
+                        item_note: 'Клапан EGR'
                     },
                     {
                         item_image: './images/engine/egr_gasket_mopar_05277928.jpg',
@@ -516,6 +616,11 @@ export const DATA = [
                         item_image: './images/engine/egr_gasket_fel-pro_70696.jpg',
                         item_code: '70696 (Fel-pro)',
                         item_note: 'Прокладка трубки клапана EGR'
+                    },
+                    {
+                        item_image: './images/engine/egr_gasket_mopar_04891068ab.jpg',
+                        item_code: '04891068AB (Mopar)',
+                        item_note: 'Прокладка клапана EGR'
                     },
                 ]},
             {subtitle: 'Ременной привод', id: 'drive_pulleys', items: [
@@ -539,10 +644,89 @@ export const DATA = [
                         item_code: '04792989AA (Mopar)',
                         item_note: 'Шкив коленвала'
                     },
+                    {
+                        item_image: './images/engine/harmonic_balanser_nty_rkp-ch-021.jpg',
+                        item_code: 'RKP-CH-021 (NTY)',
+                        item_note: 'Шкив коленвала'
+                    },
+                ]},
+            {subtitle: 'Приготовление смеси (форсунки)', id: 'fuel_preparation', items: [
+                    {
+                        item_image: './images/engine/fuel_injector_seal_standard_sk9.jpg',
+                        item_code: 'SK9 (Standard Motor Products)',
+                        item_note: 'Кольцо топливной форсунки. Комплект (12шт)'
+                    },
+                    {
+                        item_image: './images/engine/fuel_injector_seal_fel-pro_es70599.jpg',
+                        item_code: 'ES70599 (Fel-pro)',
+                        item_note: 'Кольцо топливной форсунки. Комплект (4шт)'
+                    },
+                    {
+                        item_image: './images/engine/fuel_injector_seal_mahle_gs33276.jpg',
+                        item_code: 'GS33276 (Mahle)',
+                        item_note: 'Кольцо топливной форсунки. Комплект (4шт)'
+                    },
+                    {
+                        item_image: './images/engine/fuel_injector_seal_victor-reinz_gs33276.jpg',
+                        item_code: 'GS33276 (Victor Reinz)',
+                        item_note: 'Кольцо топливной форсунки. Комплект (4шт)'
+                    },
+                    {
+                        item_image: './images/engine/fuel_injector_seal_dnj_fis645.jpg',
+                        item_code: 'FIS645 (DNJ)',
+                        item_note: 'Кольцо топливной форсунки. Комплект (4шт)'
+                    },
+                    {
+                        item_image: './images/engine/fuel_injector_rings.jpg',
+                        item_code: '',
+                        item_note: ''
+                    },
+                    {
+                        item_image: './images/engine/fuel_injector_mopar_4861615aa.jpg',
+                        item_code: '4861615AA (Mopar)',
+                        item_note: 'Форсунка 2003-2004'
+                    },
+                    {
+                        item_image: './images/engine/fuel_injector_mopar_04591986aa.jpg',
+                        item_code: '04591986AA (Mopar)',
+                        item_note: 'Форсунка 2005-2006'
+                    },
+                    {
+                        item_image: './images/engine',
+                        item_code: '',
+                        item_note: ''
+                    },
 
                 ]},
-            {subtitle: 'Приготовление смеси', id: ''},
-            {subtitle: 'Головка цилиндра', id: ''},
+            {subtitle: 'Головка цилиндра', id: 'cylinder_head', items: [
+                    {
+                        item_image: './images/engine/cylinder_head_gasket_left_dnj_hg1150l.jpg',
+                        item_code: 'HG1150L (DNJ)',
+                        item_note: 'Прокладка головки блока цилиндров (Левая)'
+                    },
+                    {
+                        item_image: './images/engine/cylinder_head_gasket_left_mahle_54372.jpg',
+                        item_code: '54372 (Mahle)',
+                        item_note: 'Прокладка головки блока цилиндров (Правая)'
+                    },
+                    {
+                        item_image: './images/engine/cylinder_head_gasket_right_dnj_hg1150r.jpg',
+                        item_code: 'HG1150R (DNJ)',
+                        item_note: 'Прокладка головки блока цилиндров (Левая)'
+                    },
+                    {
+                        item_image: './images/engine/cylinder_head_gasket_right_mahle_54371.jpg',
+                        item_code: '54371 (Mahle)',
+                        item_note: 'Прокладка головки блока цилиндров (Правая)'
+                    },
+
+
+
+
+
+
+
+                ]},
         ]
     },
     {
@@ -719,7 +903,28 @@ export const DATA = [
                         item_note: 'Датчик температуры охлаждающей жидкости'
                     },
                 ]},
-            {subtitle: 'Вентилятор охлаждения радиатора', id: ''},
+            {subtitle: 'Вентилятор охлаждения радиатора', id: 'radiator_fans', items: [
+                    {
+                        item_image: './images/cooling_system/main_radiator_fans_1.jpg',
+                        item_code: 'LFc0103 (Luzar)',
+                        item_note: 'Малый вентилятор основного радиатора'
+                    },
+                    {
+                        item_image: './images/cooling_system/main_radiator_fans_2.jpg',
+                        item_code: 'LFc0118 (Luzar)',
+                        item_note: 'Большой вентилятор основного радиатора'
+                    },
+                    {
+                        item_image: './images/cooling_system/main_radiator_fan_patron_pfn179.webp',
+                        item_code: 'PFN179 (Patron)',
+                        item_note: 'Малый вентилятор основного радиатора'
+                    },
+                    {
+                        item_image: './images/cooling_system/main_radiator_fan_patron_pfn259.webp',
+                        item_code: 'PFN259 (Patron)',
+                        item_note: 'Большой вентилятор основного радиатора'
+                    },
+                ]},
             {subtitle: 'Насос системы охлаждения (помпа)', id: 'water_pump', items: [
                     {
                         item_image: './images/cooling_system/water_pump_mopar_V9900085.jpg',
@@ -865,7 +1070,7 @@ export const DATA = [
                     },
 
                 ]},
-            {subtitle: 'Коллектор впускной', id: ''},
+            {subtitle: 'Коллектор выпускной', id: ''},
             {subtitle: 'Трубы', id: ''},
             {subtitle: 'Детали монтажа', id: ''},
         ]
@@ -976,6 +1181,46 @@ export const DATA = [
                 ]},
             {subtitle: 'Рычаги и тяги подвески', id: 'levers_and_pulls', items: [
                     {
+                        item_image: './images/chassis/suspension_arm_front_left_srl_246037.jpg',
+                        item_code: '246037 (Polcar/SRLine)',
+                        item_note: 'Передний рычаг Левый (комплект)'
+                    },
+                    {
+                        item_image: './images/chassis/suspension_arm_front_right_srl_246038.webp',
+                        item_code: '246038 (Polcar/SRLine)',
+                        item_note: 'Передний рычаг Правый (комплект)'
+                    },
+                    {
+                        item_image: './images/chassis/suspension_arm_rear_left_srl_246038-4.jpeg',
+                        item_code: '246038-4 (Polcar/SRLine)',
+                        item_note: '"Кривой" рычаг Левый'
+                    },
+                    {
+                        item_image: './images/chassis/suspension_arm_rear_right_srl_246037-4.jpeg',
+                        item_code: '246037-4 (Polcar/SRLine)',
+                        item_note: '"Кривой" рычаг Правый'
+                    },
+                    {
+                        item_image: './images/chassis/suspension_arm_rear_srl_246037-3.jpeg',
+                        item_code: '246038-3 (Polcar/SRLine)',
+                        item_note: '"Банан" рычаг Левый=Правый'
+                    },
+                    {
+                        item_image: './images/chassis/suspension_arm_rear_srl_246037-5.jpeg',
+                        item_code: '246038-5 (Polcar/SRLine)',
+                        item_note: '"Вилка" рычаг Левый=Правый'
+                    },
+                    {
+                        item_image: './images/chassis/suspension_arm_rear_srl_246037-6.jpeg',
+                        item_code: '246038-6 (Polcar/SRLine)',
+                        item_note: '"Развальный" рычаг Левый=Правый'
+                    },
+                    {
+                        item_image: './images/chassis/front_arm_febest.jpg',
+                        item_code: 'Febest',
+                        item_note: 'Передний рычаг (комплектация)'
+                    },
+                    {
                         item_image: './images/chassis/front_suspension_arm_big__silent_block.jpg',
                         item_code: 'CR0124RP (VTR)',
                         item_note: 'задний/большой сайлентблок (полиуретан)'
@@ -985,10 +1230,20 @@ export const DATA = [
                         item_code: 'CR0103RP (VTR)',
                         item_note: 'передний/малый сайлентблок (полиуретан)'
                     },
+                    // {
+                    //     item_image: './images/chassis/front_suspension_arm_ball_febest_2020-car.jpeg',
+                    //     item_code: '2020-CAR (Febest)',
+                    //     item_note: 'шаровая опора'
+                    // },
                     {
                         item_image: './images/chassis/front_suspension_arm_ball_moog_k80759.jpg',
                         item_code: 'K80759 (Moog)',
                         item_note: 'шаровая опора'
+                    },
+                    {
+                        item_image: './images/chassis/front_suspension_arm_ball_moog_k7286.jpg',
+                        item_code: 'K7286 (Moog)',
+                        item_note: 'передний/малый сайлентблок'
                     },
                     {
                         item_image: './images/chassis/rear_suspension_compression_link2.jpg',
@@ -1021,14 +1276,14 @@ export const DATA = [
                         item_note: 'развальный рычаг'
                     },
                     {
-                        item_image: './images/chassis/',
-                        item_code: '',
-                        item_note: ''
+                        item_image: './images/chassis/all_silent_blocks_vtr.jpg',
+                        item_code: 'VTR (комлект)',
+                        item_note: 'Сайлентблоки задних рычагов (нет "плавающего" и балочного/развального)'
                     },
                     {
-                        item_image: './images/chassis/',
-                        item_code: '',
-                        item_note: ''
+                        item_image: './images/chassis/all_silent_blocks_febest.jpg',
+                        item_code: 'Febest (комплект)',
+                        item_note: 'Сайлентблоки задних рычагов (нет "плавающего" и балочного/развального)'
                     },
                 ]},
             {subtitle: 'Стабилизатор, крепление', id: 'stabilizer', items: [
@@ -1045,6 +1300,11 @@ export const DATA = [
                     {
                         item_image: './images/chassis/front_link_stabilizer_asMetal_26OP1005.jpg',
                         item_code: '26OP1005 (As Metal)',
+                        item_note: 'стойки стабилизатора / перед'
+                    },
+                    {
+                        item_image: './images/chassis/front_link_stabilizer_febest_2023-car.jpg',
+                        item_code: '2023-CAR (Febest)',
                         item_note: 'стойки стабилизатора / перед'
                     },
                 ]},
@@ -1135,6 +1395,11 @@ export const DATA = [
                         item_code: 'AMGES3614 (Moog)',
                         item_note: ''
                     },
+                    {
+                        item_image: './images/steering/steering_tip_febest_2021-car.jpeg',
+                        item_code: '2021-CAR (Febest)',
+                        item_note: ''
+                    },
                 ]},
             {subtitle: 'Рейка рулевая, насос ГУР', id: 'booster_pump', items: [
                     {
@@ -1157,17 +1422,27 @@ export const DATA = [
                         item_code: 'AG0040 (AUTO-GUR)',
                         item_note: 'ремкомлект рейки'
                     },
+                    {
+                        item_image: './images/steering/steering_rack_raikanen_r0507.jpg',
+                        item_code: 'R0507 (Raikanen)',
+                        item_note: 'рулевая рейка (без тяг и наконечников)'
+                    },
                 ]},
             {subtitle: 'Бачок ГУР', id: ''},
             {subtitle: 'Тяга рулевая', id: 'tie_rod', items: [
                     {
                         item_image: './images/steering/tie_rod_сhrysler_68032249aa.jpg',
                         item_code: '68032249AA (Chrysler)',
-                        item_note: ''
+                        item_note: 'Комплект'
                     },
                     {
                         item_image: './images/steering/tie_rod_patron_ps2201.jpg',
                         item_code: 'PS2201 (Patron)',
+                        item_note: ''
+                    },
+                    {
+                        item_image: './images/steering/tie_rod_febest_2022-pac.jpeg',
+                        item_code: '2022-PAC (Febest)',
                         item_note: ''
                     },
                 ]},

@@ -126,9 +126,9 @@ function addInfoAbout (items_head, item) {
                         <a href="https://donate.stream/donate_6368cb89e59ec" target="_blank">
                             <img class="for_beer_btn" src="./images/for_beer.jpg" alt="">
                         </a> 
-                        Поддержать платформу     
+                        Поддержать платформу (добровольные донатики) 
                 </div>
-                <div class="donate">Скачать приложение
+                <div class="donate">Установить на телефон (онлайн-приложение)
                     <a href="./download/app-release_2.5_2022-11-06.apk" download="">
                         <img class="download_btn" src="./images/download_android.png" alt="скачать"/>
                     </a>
