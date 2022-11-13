@@ -77,6 +77,7 @@ for(let i = 0; i < increaseElements.length; i++) {
         modal.insertAdjacentHTML('beforeend', `${increaseElements[i].innerHTML}`)
         const increaseImage = document.getElementsByClassName('item_image')
         increaseImage[0].style.width = '100%'
+        increaseImage[0].style.borderRadius = '15px 15px 0 0'
         modal.style.display = "block";
         // modalBackground.style.background = 'rgba(0,0,0)';
         // modalBackground.style.background = 'rgba(0,0,0,0.75)';
