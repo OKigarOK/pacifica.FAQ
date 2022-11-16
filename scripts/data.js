@@ -347,6 +347,21 @@ export const DATA = [
                         item_note: 'Прокладка/уплотнение фланца трубы'
                     },
                     {
+                        item_image: './images/exhaust_system/pipe_flange_gasket_mopar_04809696aa.jpg',
+                        item_code: '04809696AA (Mopar)',
+                        item_note: 'Прокладка/уплотнение фланца трубы катализатора'
+                    },
+                    {
+                        item_image: './images/exhaust_system/pipe_flange_gasket_fel-pro_61266.jpg',
+                        item_code: '61266 (Fel-pro)',
+                        item_note: 'Прокладка/уплотнение фланца трубы катализатора'
+                    },
+                    {
+                        item_image: './images/exhaust_system/pipe_flange_gasket_walker_31647.jpg',
+                        item_code: '31647',
+                        item_note: 'Прокладка/уплотнение фланца трубы катализатора'
+                    },
+                    {
                         item_image: './images/engine/oil_pan_gasket_mopar_04792663aa.jpg',
                         item_code: '04792633AA (Mopar)',
                         item_note: 'Прокладка масленного поддона 2003+'
@@ -719,13 +734,6 @@ export const DATA = [
                         item_code: '54371 (Mahle)',
                         item_note: 'Прокладка головки блока цилиндров (Правая)'
                     },
-
-
-
-
-
-
-
                 ]},
         ]
     },
@@ -733,15 +741,69 @@ export const DATA = [
         title: 'Топливная система:',
         id: 'fuel_system',
         sub_titles: [
-            {subtitle: 'Бак топливный', id: ''},
-            {subtitle: 'Клапан', id: ''},
-            {subtitle: 'Датчик уровня топлива', id: ''},
-            {subtitle: 'Регулятор давления подачи топлива', id: ''},
+            {subtitle: 'Бак топливный', id: 'tank_fuel', items: [
+                    {
+                        item_image: './images/fuel_system/tank_fuel_mopar_05101802ab.jpg',
+                        item_code: '051001802AB (Mopar)',
+                        item_note: 'Просто бак (87 литров)'
+                    },
+                ]},
+            {subtitle: 'Клапан', id: 'leak_detection_pump', items: [
+                    {
+                        item_image: './images/fuel_system/leak_detection_pump_mopar_04891427ab.jpg',
+                        item_code: '04891427AB (Mopar)',
+                        item_note: 'Насос обнаружения утечек паров'
+                    },
+                    {
+                        item_image: './images/fuel_system/leak_detection_pump_dorman_310500.jpg',
+                        item_code: '310500 (Dorman)',
+                        item_note: 'Насос обнаружения утечек паров'
+                    },
+                    {
+                        item_image: './images/fuel_system/',
+                        item_code: '',
+                        item_note: ''
+                    },
+                ]},
+            {subtitle: 'Датчик уровня топлива', id: 'fuel_sending_unit', items: [
+                    {
+                        item_image: './images/fuel_system/fuel_sending_unit_mopar_05101804ac.jpg',
+                        item_code: '05101804AC (Mopar)',
+                        item_note: 'Датчик уровня топлива (70 Ом...1050 Ом) ЛЕВЫЙ=ПРАВЫЙ'
+                    },
+                ]},
+            {subtitle: 'Регулятор давления подачи топлива', id: 'regulator_fuel_pressure', items: [
+                    {
+                        item_image: './images/fuel_system/regulator_fuel_pressure_module_mopar_05101805ac.jpg',
+                        item_code: '05101805AC (Mopar)',
+                        item_note: 'Модуль регулятора давления топлива'
+                    },
+                    {
+                        item_image: './images/fuel_system/regulator_fuel_pressure_standard_pr321.jpg',
+                        item_code: 'PR321 (Standart Motor Products)',
+                        item_note: 'Регулятор давления топлива'
+                    },
+                    {
+                        item_image: './images/fuel_system/',
+                        item_code: '',
+                        item_note: ''
+                    },
+                ]},
             {subtitle: 'Насос топливный, комплектующие', id: 'fuel_pump', items: [
                     {
                         item_image: './images/fuel_system/fuel_pump_module_mopar_cbb2f440.jpg',
                         item_code: 'CBB2F440 (Mopar)',
                         item_note: 'Модуль топливного насоса'
+                    },
+                    {
+                        item_image: './images/fuel_system/fuel_pump_module_mopar_68028056ab.jpg',
+                        item_code: '6802805AB (Mopar)',
+                        item_note: 'Модуль топливного насоса'
+                    },
+                    {
+                        item_image: './images/fuel_system/fuel_pump_gasket_mopar_52100410aa.jpg',
+                        item_code: '52100410AA (Mopar)',
+                        item_note: 'Прокладка топливного модуля ЛЕВЫЙ=ПРАВЫЙ'
                     },
                 ]},
         ]
@@ -983,8 +1045,14 @@ export const DATA = [
         title: 'Система выпуска:',
         id: 'exhaust_system',
         sub_titles: [
-            {subtitle: 'Нейтрализация ОГ', id: ''},
-            {subtitle: 'Глушитель в сборе', id: 'exhaust', items: [
+            {subtitle: 'Нейтрализация ОГ (катализатор)', id: 'catalytic_converter', items: [
+                    {
+                        item_image: './images/exhaust_system/catalytic_converter_magnaflow_99354hm.jpg',
+                        item_code: '99354HM (Magnaflow)',
+                        item_note: 'Универсальный каталитический нейтрализатор'
+                    },
+                ]},
+            {subtitle: 'Глушитель в сборе (части)', id: 'exhaust', items: [
                     {
                         item_image: './images/exhaust_system/edex_4514-2.jpg',
                         item_code: '4514 (Edex)',
@@ -1070,18 +1138,226 @@ export const DATA = [
                     },
 
                 ]},
-            {subtitle: 'Коллектор выпускной', id: ''},
-            {subtitle: 'Трубы', id: ''},
-            {subtitle: 'Детали монтажа', id: ''},
+            {subtitle: 'Коллектор выпускной (прокладки)', id: 'exhaust_manifold', items: [
+                    {
+                        item_image: './images/exhaust_system/pipe_flange_gasket.jpg',
+                        item_code: '',
+                        item_note: 'Прокладка/уплотнение фланца трубы катализатора'
+                    },
+                    {
+                        item_image: './images/exhaust_system/pipe_flange_gasket_mopar_04809696aa.jpg',
+                        item_code: '04809696AA (Mopar)',
+                        item_note: 'Прокладка/уплотнение фланца трубы катализатора'
+                    },
+                    {
+                        item_image: './images/exhaust_system/pipe_flange_gasket_fel-pro_61266.jpg',
+                        item_code: '61266 (Fel-pro)',
+                        item_note: 'Прокладка/уплотнение фланца трубы катализатора'
+                    },
+                    {
+                        item_image: './images/exhaust_system/pipe_flange_gasket_walker_31647.jpg',
+                        item_code: '31647',
+                        item_note: 'Прокладка/уплотнение фланца трубы катализатора'
+                    },
+                    {
+                        item_image: './images/exhaust_system/exhaust_1.jpg',
+                        item_code: '',
+                        item_note: 'Прокладка выпускного коллектора'
+                    },
+                    {
+                        item_image: './images/engine/exhaust_manifold_gasket_mopar_04648915aa.jpg',
+                        item_code: '04648915AA (Mopar)',
+                        item_note: 'Прокладка/уплотнение фланца трубы'
+                    },
+                    {
+                        item_image: './images/engine/exhaust_manifold_gasket_victor-reinz_711366800.jpg',
+                        item_code: '711366800 (Victor Reinz)',
+                        item_note: 'Прокладка/уплотнение фланца трубы'
+                    },
+                    {
+                        item_image: './images/exhaust_system/exhaust_2.jpg',
+                        item_code: '',
+                        item_note: 'Прокладка выпускного коллектора'
+                    },
+                    {
+                        item_image: './images/engine/exhaust_manifold_gasket_dnj_eg143.jpg',
+                        item_code: 'EG143 (DNJ)',
+                        item_note: 'Комплект прокладок выпускного коллектора'
+                    },
+                    {
+                        item_image: './images/engine/exhaust_manifold_gasket_fel-pro_ms95446.jpg',
+                        item_code: 'MS95446 (Fel-pro)',
+                        item_note: 'Комплект прокладок выпускного коллектора'
+                    },
+                ]},
+            {subtitle: 'Трубы (гофра)', id: 'muffler_corrugation', items: [
+                    {
+                        item_image: './images/exhaust_system/muffler_corrugation_zekkert_fr65100l.jpg',
+                        item_code: 'FR60100...150L (Zekkert)',
+                        item_note: 'Гофра глушителя/катализатора усиленная (длину подбирать лучше по месту: 100...150мм)'
+                    },
+                    {
+                        item_image: './images/exhaust_system/muffler_corrugation_exhaust.jpg',
+                        item_code: '',
+                        item_note: ''
+                    },
+                    {
+                        item_image: './images/exhaust_system/',
+                        item_code: '',
+                        item_note: ''
+                    },
+                ]},
+            {subtitle: 'Детали монтажа', id: 'isolator_exhaust', items: [
+                    {
+                        item_image: './images/exhaust_system/isolator_exhaust_fa1_253905.jpg',
+                        item_code: '253905 (Fa1)',
+                        item_note: 'Крепление глушителя (задняя банка)'
+                    },
+                ]},
         ]
     },
     {
         title: 'Трансмиссия:',
         id: 'transmission',
         sub_titles: [
-            {subtitle: 'Автоматическая коробка передач', id: '123'},
-            {subtitle: 'Привод колеса', id: '456'},
-            {subtitle: 'Главная передача', id: '789'},
+            {subtitle: 'Автоматическая коробка передач', id: 'automatic_transmission', items: [
+                    {
+                        item_image: './images/transmission/input_speed_sensor_mopar_04800878.jpg',
+                        item_code: '04800878 (Mopar)',
+                        item_note: 'Датчик скорости входного вала'
+                    },
+                    {
+                        item_image: './images/transmission/output_speed_sensor_mopar_04800879.jpg',
+                        item_code: '04800879 (Mopar)',
+                        item_note: 'Датчик скорости выходного вала'
+                    },
+                    {
+                        item_image: './images/transmission/control_solenoid_seal_mopar_04659982.jpg',
+                        item_code: '04659982 (Mopar)',
+                        item_note: 'Прокладка блока соленоидов'
+                    },
+                    {
+                        item_image: './images/transmission/control_solenoid_seal_transtar_92328A.jpg',
+                        item_code: '92328A (Transtar)',
+                        item_note: 'Прокладка блока соленоидов'
+                    },
+                    {
+                        item_image: './images/transmission/shift_solenoid_borg-warner_50083.jpg',
+                        item_code: '50083 (Borg-warner)',
+                        item_note: 'Блок соленоидов'
+                    },
+                    {
+                        item_image: './images/transmission/case_cover_mopar_04659636.jpg',
+                        item_code: '04659636 (Mopar)',
+                        item_note: 'Крышка АКПП (дифференциал)'
+                    },
+                    {
+                        item_image: './images/transmission/case_cover_dorman_265-820.jpg',
+                        item_code: '265820 (Dorman)',
+                        item_note: 'Крышка АКПП (дифференциал)'
+                    },
+                    {
+                        item_image: './images/transmission/case_cover_nty_bmo-ch-033.jpg',
+                        item_code: 'BMO-CH-033 (NTY)',
+                        item_note: 'Крышка АКПП (дифференциал)'
+                    },
+                    {
+                        item_image: './images/transmission/fluid_pan_mopar_04800210aa.jpg',
+                        item_code: '04800210AA (Mopar)',
+                        item_note: 'Маслянный поддон АКПП'
+                    },
+                    {
+                        item_image: './images/transmission/fluid_pan_nty_bmo-ch-031.jpg',
+                        item_code: 'BMO-CH-031 (NTY)',
+                        item_note: 'Маслянный поддон АКПП'
+                    },
+                    {
+                        item_image: './images/transmission/mopar_68207789aa.jpg',
+                        item_code: '68207789AA (Mopar)',
+                        item_note: 'Магнит поддона АКПП'
+                    },
+
+                ]},
+            {subtitle: 'Привод колеса (полуоси)', id: 'wheel_drive', items: [
+                    {
+                        item_image: './images/transmission/cv_axle_left_patron_pds1969.jpg',
+                        item_code: 'PDS1969 (Patron)',
+                        item_note: 'Полуось левая/перед (FWD/AWD)'
+                    },
+                    {
+                        item_image: './images/transmission/cv_axle_right_patron_pds1970.jpg',
+                        item_code: 'PDS1970 (Patron)',
+                        item_note: 'Полуось правая/перед (FWD)'
+                    },
+                    {
+                        item_image: './images/transmission/cv_axle_left_nd138ny.jpg',
+                        item_code: 'ND138NY (Nakayama)',
+                        item_note: 'Полуось левая/перед (FWD/AWD)'
+                    },
+                    {
+                        item_image: './images/transmission/cv_axle_right_nd139ny.jpeg',
+                        item_code: 'ND139NY (Nakayama)',
+                        item_note: 'Полуось правая/перед (FWD)'
+                    },
+                    {
+                        item_image: './images/transmission/cv_axle_right__cardone_663401.jpg',
+                        item_code: '663401 (Cardone)',
+                        item_note: 'Полуось правая/перед (AWD)'
+                    },
+                    {
+                        item_image: './images/transmission/cv_axle_right_gsp_ncv12054.jpg',
+                        item_code: 'NCV12054 (GSP)',
+                        item_note: 'Полуось правая/перед (AWD)'
+                    },
+                    {
+                        item_image: './images/transmission/outer_cv_axel_front_patron_pcv6751.jpg',
+                        item_code: 'PCV6751 (Patron)',
+                        item_note: 'ШРУС наружный/перед (шлицы 26x32)'
+                    },
+                    {
+                        item_image: './images/transmission/outer_cv_axel_front_nakayama_nj165ny.jpg',
+                        item_code: 'NJ165NY (Nakayama)',
+                        item_note: 'ШРУС наружный/перед (шлицы 26x32)'
+                    },
+                    {
+                        item_image: './images/transmission/anther_empi_862389d.jpg',
+                        item_code: '862389D (Empi)',
+                        item_note: 'Пыльник шруса'
+                    },
+                ]},
+            {subtitle: 'Главная передача (кардан)', id: 'cardan_shaft', items: [
+                    {
+                        item_image: './images/transmission/cardan_coupling.jpg',
+                        item_code: '',
+                        item_note: 'Муфта кардана'
+                    },
+                    {
+                        item_image: './images/transmission/cardan_coupling_matalcaucho_00735.jpg',
+                        item_code: '00735 (Metalcaucho)',
+                        item_note: 'Муфта кардана'
+                    },
+                    {
+                        item_image: './images/transmission/outboard_bearing.jpg',
+                        item_code: '',
+                        item_note: 'Подвесной подшипник кардана (2шт)'
+                    },
+                    {
+                        item_image: './images/transmission/outboard_bearing_febest_tcb024.jpg',
+                        item_code: 'TCB-024 (Febest)',
+                        item_note: 'Подвесной подшипник кардана (2шт)'
+                    },
+                    {
+                        item_image: './images/transmission/outboard_bearing_vtr_vw6001r.jpeg',
+                        item_code: 'VW6001R (VTR)',
+                        item_note: 'Подвесной подшипник кардана (2шт)'
+                    },
+                    {
+                        item_image: './images/transmission/',
+                        item_code: '',
+                        item_note: ''
+                    },
+
+                ]},
         ]
     },
     {
@@ -1202,17 +1478,17 @@ export const DATA = [
                     },
                     {
                         item_image: './images/chassis/suspension_arm_rear_srl_246037-3.jpeg',
-                        item_code: '246038-3 (Polcar/SRLine)',
+                        item_code: '246037-3 (Polcar/SRLine)',
                         item_note: '"Банан" рычаг Левый=Правый'
                     },
                     {
                         item_image: './images/chassis/suspension_arm_rear_srl_246037-5.jpeg',
-                        item_code: '246038-5 (Polcar/SRLine)',
+                        item_code: '246037-5 (Polcar/SRLine)',
                         item_note: '"Вилка" рычаг Левый=Правый'
                     },
                     {
                         item_image: './images/chassis/suspension_arm_rear_srl_246037-6.jpeg',
-                        item_code: '246038-6 (Polcar/SRLine)',
+                        item_code: '246037-6 (Polcar/SRLine)',
                         item_note: '"Развальный" рычаг Левый=Правый'
                     },
                     {
@@ -1262,7 +1538,7 @@ export const DATA = [
                     },
                     {
                         item_image: './images/chassis/rear_beam_silent_block.jpg',
-                        item_code: '3475601 (Lemforder)',
+                        item_code: '2240201 (Lemforder)',
                         item_note: '"лодка" - балочный сайлентблок (1шт)'
                     },
                     {
@@ -1311,23 +1587,23 @@ export const DATA = [
             {subtitle: 'Ступица колеса, составляющие', id: 'hub', items: [
                     {
                         item_image: './images/chassis/hub_patron_pbk51320h.jpg',
-                        item_code: 'PBK51320H (Patron)',
-                        item_note: ''
+                        item_code: 'PBK513201H (Patron)',
+                        item_note: 'ЛЕВАЯ=ПРАВАЯ ЗАД=ПЕРЕД (отличаются длинной датчика ABS)'
                     },
                     {
                         item_image: './images/chassis/hub_patron_pbk4035h.jpg',
                         item_code: 'PBK4035H (Patron)',
-                        item_note: ''
+                        item_note: 'ЛЕВАЯ=ПРАВАЯ ЗАД=ПЕРЕД (отличаются длинной датчика ABS)'
                     },
                     {
                         item_image: './images/chassis/hub_nty_klp-ch-027.jpg',
                         item_code: 'KLP-CH-027 (NTY)',
-                        item_note: ''
+                        item_note: 'ЛЕВАЯ=ПРАВАЯ ЗАД=ПЕРЕД (отличаются длинной датчика ABS)'
                     },
                     {
                         item_image: './images/chassis/hub_stellox_43-29070-sx.png',
                         item_code: '43-29070-SX (Stellox)',
-                        item_note: ''
+                        item_note: 'ЛЕВАЯ=ПРАВАЯ ЗАД=ПЕРЕД (отличаются длинной датчика ABS)'
                     }
                 ]},
             {subtitle: 'Крепление амортизатора подвески', id: ''},
