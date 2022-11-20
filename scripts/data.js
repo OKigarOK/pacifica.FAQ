@@ -12,19 +12,21 @@ export const DATA = [
                     {
                         item_image: './images/maintenance/refueling_tanks.jpg',
                         item_code: '',
-                        item_note: 'Заправочные емкости'
+                        item_note: 'Заправочные емкости',
                     },
                     {
                         item_image: './images/maintenance/clearance.jpg',
                         item_code: '',
-                        item_note: 'Высоты в стоке'
+                        item_note: 'Высоты в стоке',
                     },
                 ]},
             {subtitle: 'Фильтр маслянный', id: 'oil_filter', items: [
                     {
                         item_image: './images/maintenance/oil_filter_mopar_05281090.jpg',
-                        item_code: '05281090AB (Mopar)',
-                        item_note: ''
+                        item_code: '05281090AB - Mopar',
+                        item_brand: 'Mopar',
+                        item_note: '',
+                        item_description: '',
                     },
                     {
                         item_image: './images/maintenance/oil_filter_fram_ph16.jpg',
@@ -1328,6 +1330,7 @@ export const DATA = [
             {subtitle: 'Главная передача (кардан)', id: 'cardan_shaft', items: [
                     {
                         item_image: './images/transmission/cardan_coupling.jpg',
+                        item_location_image: './images/transmission/cardan_coupling_matalcaucho_00735.jpg',
                         item_code: '',
                         item_note: 'Муфта кардана'
                     },

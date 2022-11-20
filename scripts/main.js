@@ -44,9 +44,10 @@ function addSubtitles (items_head, item) {
 function addSubtitleItems(items_head, item) {
     items_head.insertAdjacentHTML('beforeend', `        
         <div class="item">
-            <div class="item_image">
+            <div class="item_image">      
                 <img src=${item.item_image} alt=${item.item_code}>
             </div>
+            
             <div>
                 <div class="item_code">${item.item_code}</div>
                 <div class="item_note">${item.item_note}</div>
@@ -74,10 +75,13 @@ const modal = document.getElementById("myModal");
 
 for(let i = 0; i < increaseElements.length; i++) {
     increaseElements[i].addEventListener('click', () => {
+        console.log(increaseElements[i]);
         modal.insertAdjacentHTML('beforeend', `${increaseElements[i].innerHTML}`)
         const increaseImage = document.getElementsByClassName('item_image')
         increaseImage[0].style.width = '100%'
-        increaseImage[0].style.borderRadius = '15px 15px 0 0'
+        // increaseImage[0].style.borderRadius = '15px 15px 0 0'
+        increaseImage[0].style.borderRadius = '15px 15px 5px 5px'
+
         modal.style.display = "block";
         // modalBackground.style.background = 'rgba(0,0,0)';
         // modalBackground.style.background = 'rgba(0,0,0,0.75)';
@@ -123,18 +127,18 @@ function addInfoAbout (items_head, item) {
                         </a>
                     </div>
                 </div>        
-                <div class="donate">
+                <div class="links">
                         <a href="https://donate.stream/donate_6368cb89e59ec" target="_blank">
                             <img class="for_beer_btn" src="./images/for_beer.jpg" alt="">
                         </a> 
                         Поддержать платформу (добровольные донатики) 
                 </div>
-                <div class="donate">Установить на телефон (онлайн-приложение)
+                <div class="links download">Установить на телефон (онлайн-приложение)
                     <a href="./download/app-release.apk" download="">
                         <img class="download_btn" src="./images/download_android.png" alt="скачать"/>
                     </a>
                 </div>
-                <div class="donate">
+                <div class="links">
                         <a href="https://chat.whatsapp.com/EkBtJl0utpR5TXPR8xMuBa" target="_blank">
                             <img class="for_beer_btn" src="./images/logo.jpg" alt="">
                         </a> 
@@ -162,3 +166,4 @@ for (let i = 0; i < acc.length; i++) {
         }
     });
 }
+

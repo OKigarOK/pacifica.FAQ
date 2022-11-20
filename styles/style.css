@@ -35,7 +35,7 @@ body {
 
 .update,
 .version {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: bolder;
     text-align: center;
     color: whitesmoke;
@@ -43,6 +43,7 @@ body {
 
 .container {
     box-sizing: border-box;
+    /*min-width: 360px;*/
     min-width: 360px;
     padding: 5px 5px 0 5px;
     margin: 0 auto;
@@ -51,14 +52,19 @@ body {
     /*background: url('../images/snow_gif2.gif') fixed;*/
 }
 
-.logo {
-    /* display: flex; */
-    /* justify-content: center; */
+.logo.desktop {
+    display: none;
+    margin: 0 auto;
+    width: 75%;
+}
+
+.version.desktop {
+    display: none;
 }
 
 .logo img {
     width: 100%;
-    margin-bottom: 10px;
+    /*margin-bottom: 10px;*/
     text-align: center;
 }
 
@@ -89,7 +95,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 150px;
+    width: Calc((100% / 2) - 10px);
     margin: 5px;
     transition: all linear 0.25s;
 }
@@ -100,7 +106,7 @@ body {
 }
 
 .item_image {
-    width: 150px;
+    width: 100%;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -137,7 +143,7 @@ h1 {
     display: none;
 }
 
-.donate {
+.links {
     color: white;
     font-size: 15px;
     /*font-weight: bolder;*/
@@ -151,6 +157,10 @@ h1 {
     align-items: center;
 }
 
+.download {
+
+}
+
 a {
     color: white;
 }
@@ -159,26 +169,95 @@ a {
     transition: height ease-in-out 1s;
 }
 
-@media screen and (min-width: 500px) {
-    body {
-        background: black;
-        /*background: url('../images_send/chrysler_pacifica_bg.jpg') fixed no-repeat;*/
-        background: url('../images/chrysler_pacifica.jpg') fixed no-repeat;
-        background-size: cover;
-        background-position: center;
+/*@media screen and (min-width: 500px) {*/
+/*    body {*/
+/*        background: black;*/
+/*        !*background: url('../images_send/chrysler_pacifica_bg.jpg') fixed no-repeat;*!*/
+/*        background: url('../images/chrysler_pacifica.jpg') fixed no-repeat;*/
+/*        background-size: cover;*/
+/*        background-position: center;*/
+/*    }*/
+
+/*    .container,*/
+/*    .footer {*/
+/*        display: none;*/
+/*        !*width: 600px;*!*/
+/*    }*/
+
+/*    h1 {*/
+/*        text-align: center;*/
+/*        display: block;*/
+/*    }*/
+
+/*    .logo img {*/
+/*        display: none;*/
+/*    }*/
+/*}*/
+
+/*NEW ADAPTIVE*/
+
+/*3 CARDS*/
+@media screen and (min-width: 540px) {
+    /*body {*/
+    /*    background: black;*/
+    /*    background: url('../images/chrysler_pacifica_bg.jpg') fixed no-repeat;*/
+    /*    !*background: url('../images/chrysler_pacifica.jpg') fixed no-repeat;*!*/
+    /*    background-size: cover;*/
+    /*    background-position: center;*/
+    /*}*/
+
+    .logo.mobile {
+        display: none;
+    }
+
+    .logo.desktop {
+        display: block;
     }
 
     .container,
     .footer {
+        min-width: 540px;
+    }
+
+    .item {
+        width: Calc((100% / 3) - 10px);
+    }
+
+    .modal {
+        width: 50%;
+    }
+
+}
+
+/*4 CARDS*/
+@media screen and (min-width: 720px) {
+    .logo {
         display: none;
     }
 
-    h1 {
-        text-align: center;
-        display: block;
+    .container,
+    .footer {
+        /*min-width: 720px;*/
+        max-width: 720px;
     }
 
-    .logo img {
+    .item {
+        width: Calc((100% / 4) - 10px);
+    }
+
+    .modal {
+        width: 50%;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    .links.download {
+        display: none;
+    }
+    .version.desktop {
+        display: block;
+    }
+    .version.mobile {
         display: none;
     }
 }
@@ -188,7 +267,7 @@ a {
     text-align: justify;
     line-height: 1.2em;
     color: white;
-    padding: 0 5px;
+    /*padding: 0 5px;*/
 }
 
 .inline img:hover {

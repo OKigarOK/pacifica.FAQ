@@ -14,3 +14,17 @@
     border-radius: 25px;
     box-shadow: 0 0 250px 125px black;
 }
+
+/*3 CARDS*/
+@media screen and (min-width: 540px) {
+    .modal {
+        width: 300px;
+    }
+}
+
+/*4 CARDS*/
+@media screen and (min-width: 720px) {
+    .modal {
+        width: 400px;
+    }
+}
