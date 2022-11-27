@@ -1,4 +1,5 @@
 import {ABOUT, DATA} from "./data.js";
+import {BIRTHDAYS} from "./birthday_data.js";
 
 // DOM-дерево
 
@@ -165,5 +166,106 @@ for (let i = 0; i < acc.length; i++) {
             panel.style.maxHeight = "100%"
         }
     });
+}
+
+// МОДАЛКА С ДНЯМИ РОЖДЕНИЯ !!!
+
+// Get the modal_birthday
+const modal_birthday = document.getElementById("modal_birthday");
+
+// Get the button that opens the modal_birthday
+// const btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal_birthday
+const span = document.getElementsByClassName("modal_birthday_btn_close_image")[0];
+
+// When the user clicks the button, open the modal_birthday
+// btn.onclick = function() {
+//     modal_birthday.style.display = "block";
+//     document.body.style.backgroundColor = 'rgba(0,0,0,0.4)'
+// }
+
+// When the user clicks on <span> (x), close the modal_birthday
+span.onclick = function() {
+    modal_birthday.style.display = "none";
+    // document.body.style.backgroundColor = 'white';
+    modalBackground.style.pointerEvents = 'all';
+    document.body.style.overflow = "visible";
+}
+
+// When the user clicks anywhere outside of the modal_birthday, close it
+// window.onclick = function(event) {
+//     if (event.target == modal_birthday) {
+//         modal_birthday.style.display = "none";
+//         document.body.style.backgroundColor = 'white'
+//     }
+// }
+
+// const USER = BIRTHDAYS[20]
+
+const isCurrentDate = new Date();
+const isCurrentYear = isCurrentDate.getFullYear();
+const isCurrentMonth = String(isCurrentDate.getMonth() + 1);
+const isCurrentDay = String(isCurrentDate.getDate());
+
+
+for (let element of BIRTHDAYS) {
+    const birthdayStringToNumbers = element.birthday_date.split('-')
+    if (birthdayStringToNumbers[0] === isCurrentDay && birthdayStringToNumbers[1] === isCurrentMonth) {
+        addUserDataToModal(element)
+        // showModal()
+        setTimeout(showModal, 5000)
+    }
+}
+
+// ПОКАЗАТЬ МОДАЛКУ
+
+function showModal () {
+    modal_birthday.style.display = "block";
+    document.body.style.backgroundColor = 'rgba(0,0,0,0.4)';
+
+    modalBackground.style.pointerEvents = 'none';
+    document.body.style.overflow = "hidden";
+}
+
+function closeModal () {
+    modal_birthday.style.display = "none";
+    document.body.style.backgroundColor = 'white'
+}
+
+// ВСТАВЛЯЕМ ДАННЫЕ В МОДАЛКУ
+
+function addUserDataToModal (USER) {
+    const userNicknameElement = document.getElementById('user_nickname')
+    const userNameElement = document.getElementById('user_name')
+    const userAgeElement = document.getElementById('user_age')
+    const userAboutElement = document.getElementById('user_about')
+    const userWorkElement = document.getElementById('user_work')
+    const userAvatarElement = document.getElementById('modal_birthday_content_avatar')
+
+    const birthdayStringToNumbers = USER.birthday_date.split('-')
+    const isUserAge = String(isCurrentYear - birthdayStringToNumbers[2])
+
+    userNicknameElement.textContent = USER.nickname
+
+    if (USER.name) {
+        userNameElement.textContent = 'Для чатлан: ' + USER.name
+    } else userNameElement.textContent = ''
+
+    if (isUserAge) {
+        userAgeElement.textContent = 'Сегодня исполнилось: ' + isUserAge
+    } else userAgeElement.textContent = ''
+
+    if (USER.about) {
+        userAboutElement.textContent = 'Обо мне: ' + USER.about
+    } else userAboutElement.textContent = ''
+
+    if (USER.work) {
+        userWorkElement.textContent = 'Сфера интересов: ' + USER.work
+    } else userWorkElement.textContent = ''
+
+    if (USER.avatar) {
+        userAvatarElement.setAttribute("src", `${USER.avatar}`)
+    } else userAvatarElement.setAttribute("src", './images/modal_birthday_avatars/no_avatar.jpg')
 }
 

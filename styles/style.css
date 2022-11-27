@@ -30,7 +30,6 @@ body {
 .header_title {
     display: flex;
     justify-content: space-between;
-
 }
 
 .update,
@@ -39,6 +38,7 @@ body {
     font-weight: bolder;
     text-align: center;
     color: whitesmoke;
+
 }
 
 .container {
@@ -111,7 +111,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
     width: Calc((100% / 2) - 10px);
+
     margin: 5px;
     transition: all linear 0.25s;
 }
@@ -123,6 +125,7 @@ body {
 
 .item_image {
     width: 100%;
+    /*height: 150px;*/
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -137,6 +140,8 @@ body {
 
 .item_image img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .item_code {
