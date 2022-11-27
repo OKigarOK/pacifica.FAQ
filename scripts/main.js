@@ -214,7 +214,7 @@ for (let element of BIRTHDAYS) {
     if (birthdayStringToNumbers[0] === isCurrentDay && birthdayStringToNumbers[1] === isCurrentMonth) {
         addUserDataToModal(element)
         // showModal()
-        setTimeout(showModal, 5000)
+        setTimeout(showModal, 15000)
     }
 }
 
