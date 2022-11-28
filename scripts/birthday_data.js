@@ -1,5 +1,13 @@
 export const BIRTHDAYS = [
     {
+        nickname: 'Виталий',
+        name: 'Виталий',
+        avatar: './images/modal_birthday_avatars/Vitaly.jpg',
+        birthday_date: '02-01-1976',
+        about: 'Симферополь',
+        work: 'Монтаж-такелаж промышленного оборудования',
+    },
+    {
         nickname: 'Максим МСК',
         name: 'Максим Анатольевич',
         avatar: './images/modal_birthday_avatars/Maxim_MSK.jpg',
@@ -37,6 +45,14 @@ export const BIRTHDAYS = [
         avatar: './images/modal_birthday_avatars/Gregory.jpg',
         birthday_date: '01-05-1978',
         about: 'Москва - Воронеж куй догонишь',
+        work: '',
+    },
+    {
+        nickname: 'Пётр Павлович',
+        name: 'Пётр',
+        avatar: './images/modal_birthday_avatars/Pyotr_Pavlovich.jpg',
+        birthday_date: '23-05-1988',
+        about: 'Мы Самарские',
         work: '',
     },
     {
@@ -128,6 +144,14 @@ export const BIRTHDAYS = [
         work: 'Такси... Остальное Вы знаете )))',
     },
     {
+        nickname: 'Володя',
+        name: 'Вова Бородач',
+        avatar: './images/modal_birthday_avatars/Volodya.jpg',
+        birthday_date: '26-08-1989',
+        about: 'За любой кипиш кроме голодовки',
+        work: '',
+    },
+    {
         nickname: 'Денис Николаевич',
         name: 'Денис Николаевич ',
         avatar: './images/modal_birthday_avatars/no_avatar.jpg',
@@ -160,6 +184,14 @@ export const BIRTHDAYS = [
         work: 'Кадастровый инженер. Если нужна консультация по оформлению недвижимости: чем смогу - помогу ))',
     },
     {
+        nickname: 'Юрий',
+        name: 'Юрий',
+        avatar: './images/modal_birthday_avatars/Yuri.jpg',
+        birthday_date: '01-11-1977',
+        about: 'Тюмень',
+        work: 'ремонт квартир ',
+    },
+    {
         nickname: 'Сергей Минск',
         name: 'Сергей',
         avatar: './images/modal_birthday_avatars/Sergey_Minsk.jpg',
@@ -174,6 +206,22 @@ export const BIRTHDAYS = [
         birthday_date: '17-11-1972',
         about: '',
         work: 'Химчистка одежды, Ковров. Директор ',
+    },
+    {
+        nickname: 'Виталий',
+        name: 'Витамин',
+        avatar: './images/modal_birthday_avatars/Vitamin.jpg',
+        birthday_date: '24-11-1978',
+        about: 'мир вам !!! Москва',
+        work: 'в прошлом автомаляр, сейчас сварщик',
+    },
+    {
+        nickname: 'Мк',
+        name: 'Максим',
+        avatar: './images/modal_birthday_avatars/Mk.jpg',
+        birthday_date: '04-12-1983',
+        about: 'Могилёв-Москва',
+        work: 'Механик Рольф(дилер Крайслера)',
     },
     {
         nickname: 'Димон31',
@@ -191,21 +239,28 @@ export const BIRTHDAYS = [
         about: 'Хачу на море',
         work: 'Псих железнодорожник, люблю крутить гайки',
     },
-
-    {
-        nickname: 'ТЕСТИРОВАНИЕ ДР...',
-        name: '',
-        avatar: './images/modal_birthday_avatars/no_avatar.jpg',
-        birthday_date: '27-11-2022',
-        about: 'что-нибудь о себе...',
-        work: 'чем могу быть полезен сообществу...',
-    },
     {
         nickname: 'ТЕСТИРОВАНИЕ...',
         name: 'КИБЕР ПОНЕДЕЛЬНИК',
         avatar: './images/modal_birthday_avatars/cyber_monday.png',
         birthday_date: '28-11-2022',
         about: '',
+        work: '',
+    },
+    {
+        nickname: 'Сегодня отмечается:',
+        name: 'День Любителя Острых Ощущений',
+        avatar: './images/modal_birthday_avatars/november_29.jpg',
+        birthday_date: '29-11-2022',
+        about: 'Каких только праздников не отмечают...',
+        work: '',
+    },
+    {
+        nickname: 'Сегодня отмечается:',
+        name: 'Праздник Неглиже',
+        avatar: './images/modal_birthday_avatars/november_30.jpg',
+        birthday_date: '30-11-2022',
+        about: 'Если совсем грустно, то вот, отличный повод накатить...',
         work: '',
     },
     {

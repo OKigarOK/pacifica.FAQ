@@ -38,7 +38,6 @@ body {
     font-weight: bolder;
     text-align: center;
     color: whitesmoke;
-
 }
 
 .container {
@@ -47,7 +46,7 @@ body {
     min-width: 360px;
     padding: 5px 5px 0 5px;
     margin: 0 auto;
-    /*background: url('../images/autumn_2.gif') fixed;*/
+    background: url('../images/autumn_2.gif') fixed;
     /*opacity: 0.85;*/
     /*background: url('../images/snow_gif2.gif') fixed;*/
 }
