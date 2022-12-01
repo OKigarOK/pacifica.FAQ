@@ -42,29 +42,20 @@ body {
 
 .container {
     box-sizing: border-box;
-    /*min-width: 360px;*/
     min-width: 360px;
     padding: 5px 5px 0 5px;
     margin: 0 auto;
-    background: url('../images/autumn_3.gif') fixed;
-    /*opacity: 0.85;*/
-    /*background: url('../images/snow_gif1.gif') fixed;*/
 }
 
 .weather {
     width: 100%;
     height: 100%;
-    /*background: url('../images/autumn_2.gif') fixed;*/
-    /*background: url('../images/snow_gif3.gif') fixed;*/
-    background: url('../images/weather_rain_3.gif') fixed;
-    /*background: url('../images/weather_rain_4.gif') fixed;*/
+    background: url('../images/snow_2.gif') fixed;
 }
 
 .weather_layout {
     width: 100%;
     height: 100%;
-    /*background: url('../images/weather_rain_4.gif') fixed;*/
-    /*background: url('../images/weather_rain_3.gif') fixed;*/
 }
 
 .logo.desktop {

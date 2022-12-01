@@ -50,7 +50,9 @@ function addSubtitleItems(items_head, item) {
             </div>
             
             <div>
-                <div class="item_code">${item.item_code}</div>
+                <div class="item_code">${item.item_code}
+<!--                    <img style="height: 25px" src="../images/icon_copy.png" alt="">-->
+                </div>
                 <div class="item_note">${item.item_note}</div>
             </div>
         </div>`)
@@ -68,7 +70,7 @@ function addSubtitleItems(items_head, item) {
 //     })
 // }
 
-// МОДАЛКА
+// МОДАЛКА УВЕЛИЧЕННАЯ ДЕТАЛЬ
 
 const increaseElements = document.querySelectorAll('.item')
 const modalBackground = document.getElementById('header')
@@ -214,7 +216,7 @@ for (let element of BIRTHDAYS) {
     if (birthdayStringToNumbers[0] === isCurrentDay && birthdayStringToNumbers[1] === isCurrentMonth) {
         addUserDataToModal(element)
         // showModal()
-        setTimeout(showModal, 15000)
+        setTimeout(showModal, 5000)
     }
 }
 
