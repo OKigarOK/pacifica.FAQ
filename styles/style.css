@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+body {
+    width: 100%;
+    -moz-user-select: none;
+    user-select: none;
+    background: black;
+    background: url('../images/chrysler_pacifica_bg.jpg') fixed no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: whitesmoke;
+    font-family: 'PT Sans Narrow', sans-serif;
+    line-height: 25px;
+}
+
+.header_title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.update,
+.version {
+    font-size: 14px;
+    font-weight: bolder;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.container {
+    box-sizing: border-box;
+    min-width: 360px;
+    padding: 5px 5px 0 5px;
+    margin: 0 auto;
+}
+
+.weather {
+    width: 100%;
+    height: 100%;
+    background: url('../images/snow_2.gif') fixed;
+}
+
+.weather_layout {
+    width: 100%;
+    height: 100%;
+}
+
+.logo.desktop {
+    display: none;
+    margin: 0 auto;
+    width: 75%;
+}
+
+.version.desktop {
+    display: none;
+}
+
+.logo img {
+    width: 100%;
+    text-align: center;
+}
+
+.list_item {
+    box-sizing: border-box;
+    background: black;
+    opacity: 0.9;
+    width: 100%;
+    border: 5px solid wheat;
+    border-radius: 20px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.item_container {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    border: 2px solid wheat;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.item {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-between;*/
+    align-items: center;
+    width: Calc((100% / 2) - 10px);
+    margin: 5px;
+    transition: all linear 0.25s;
+}
+
+.increase {
+    transform: scale(2);
+    transition: all linear 0.25s;
+}
+
+.item_image {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.item_image:hover {
+    cursor: pointer;
+}
+
+.item_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item_code {
+    margin: 5px 0;
+    text-align: center;
+    font-size: 15px;
+}
+
+.copy_code {
+    text-align: center;
+    font-size: 15px;
+    font-weight: bolder;
+    background-color: wheat;
+    color: black;
+    width: 145px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.copy_code:active {
+    scale: 0.95;
+}
+
+.copy_code:hover {
+    cursor: pointer;
+}
+
+.item_note {
+    margin: 5px 0;
+    text-align: center;
+    font-size: 15px;
+}
+
+button:disabled {
+    opacity: 0.5;
+}
+
+h1 {
+    display: none;
+}
+
+.links {
+    color: white;
+    font-size: 15px;
+    padding: 0 5px;
+    text-align: center;
+    border: 2px solid wheat;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.download {
+
+}
+
+a {
+    color: white;
+}
+
+.panel {
+    transition: height ease-in-out 1s;
+}
+
+/*@media screen and (min-width: 500px) {*/
+/*    body {*/
+/*        background: black;*/
+/*        !*background: url('../images_send/chrysler_pacifica_bg.jpg') fixed no-repeat;*!*/
+/*        background: url('../images/chrysler_pacifica.jpg') fixed no-repeat;*/
+/*        background-size: cover;*/
+/*        background-position: center;*/
+/*    }*/
+
+/*    .container,*/
+/*    .footer {*/
+/*        display: none;*/
+/*        !*width: 600px;*!*/
+/*    }*/
+
+/*    h1 {*/
+/*        text-align: center;*/
+/*        display: block;*/
+/*    }*/
+
+/*    .logo img {*/
+/*        display: none;*/
+/*    }*/
+/*}*/
+
+/*NEW ADAPTIVE*/
+
+/*3 CARDS*/
+@media screen and (min-width: 540px) {
+    /*body {*/
+    /*    background: black;*/
+    /*    background: url('../images/chrysler_pacifica_bg.jpg') fixed no-repeat;*/
+    /*    !*background: url('../images/chrysler_pacifica.jpg') fixed no-repeat;*!*/
+    /*    background-size: cover;*/
+    /*    background-position: center;*/
+    /*}*/
+
+    .logo.mobile {
+        display: none;
+    }
+
+    .logo.desktop {
+        display: block;
+    }
+
+    .container,
+    .footer {
+        min-width: 540px;
+    }
+
+    .item {
+        width: Calc((100% / 3) - 10px);
+    }
+
+    .modal {
+        width: 50%;
+    }
+
+}
+
+/*4 CARDS*/
+@media screen and (min-width: 720px) {
+    .logo {
+        display: none;
+    }
+
+    .container,
+    .footer {
+        /*min-width: 720px;*/
+        max-width: 720px;
+    }
+
+    .item {
+        width: Calc((100% / 4) - 10px);
+    }
+
+    .modal {
+        width: 50%;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    .links.download {
+        display: none;
+    }
+    .version.desktop {
+        display: block;
+    }
+    .version.mobile {
+        display: none;
+    }
+}
+
+.about {
+    font-size: 16px;
+    text-align: justify;
+    line-height: 1.2em;
+    color: white;
+    /*padding: 0 5px;*/
+}
+
+.inline img:hover {
+    cursor: pointer;
+    filter: none
+}
+
+.inline {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.download_btn {
+    margin-top: 5px;
+    height: 40px;
+}
+
+.for_beer_btn {
+    margin-top: 5px;
+    border-radius: 5px;
+    height: 60px;
+}
