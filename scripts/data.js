@@ -819,7 +819,7 @@ export const DATA = [
                         item_note: 'Прокладка верхнего патрубка (термостата)'
                     },
                 ]},
-            {subtitle: 'Радиаторы маслянный, водяной', id: 'cooling_radiators', items: [
+            {subtitle: 'Расширительный бачок, крышка', id: 'expansion_tank', items: [
                     {
                         item_image: './images/cooling_system/coolant_reservoir_mopar_4880498ac.jpeg',
                         item_code: '4880498AC (Mopar)',
@@ -830,6 +830,43 @@ export const DATA = [
                         item_code: '2460ZB-2 (Polcar)',
                         item_note: 'Расширительный бачок'
                     },
+                    {
+                        item_image: './images/cooling_system/tank_cap_mopar_52028974aa_18psi.jpg',
+                        item_code: '52028974AA (Mopar)',
+                        item_note: 'Крышка бачка (18psi)'
+                    },
+                    {
+                        item_image: './images/cooling_system/tank_cap_motorad_T18_18psi.jpg',
+                        item_code: 'T18 (Motorad)',
+                        item_note: 'Крышка бачка (18psi)'
+                    },
+                    {
+                        item_image: './images/cooling_system/tank_cap_gates_31525-18psi.jpg',
+                        item_code: '31525 (Gates)',
+                        item_note: 'Крышка бачка (18psi)'
+                    },
+                    {
+                        item_image: './images/cooling_system/tank_cap_gates_rc135_16psi.jpg',
+                        item_code: 'RC135 (Gates)',
+                        item_note: 'Крышка бачка (16psi)'
+                    },
+                    {
+                        item_image: './images/cooling_system/tank_cap_stant_10234_16psi.jpg',
+                        item_code: '10234 (Stant)',
+                        item_note: 'Крышка бачка (16psi)'
+                    },
+                    {
+                        item_image: './images/cooling_system/tank_cap_luzar_ll0301_16psi.jpg',
+                        item_code: 'LL0301 (Luzar)',
+                        item_note: 'Крышка бачка (16psi)'
+                    },
+                    {
+                        item_image: './images/cooling_system/tank_cap_stant_10329_13psi.jpg',
+                        item_code: '10329 (Stant)',
+                        item_note: 'Крышка бачка (13psi)'
+                    },
+                ]},
+            {subtitle: 'Радиаторы: основной, масляннный (АКПП), кондиционера', id: 'cooling_radiators', items: [
                     {
                         item_image: './images/cooling_system/main_radiator_denso_drm06001.jpg',
                         item_code: 'DRM06001 (Denso)',
