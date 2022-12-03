@@ -836,7 +836,7 @@ export const DATA = [
                         item_note: 'Основной радиатор'
                     },
                     {
-                        item_image: './images/cooling_system/main_radiator_nissens_61028.JPG',
+                        item_image: './images/cooling_system/main_radiator_nissens_61028.jpg',
                         item_code: '61028 (Nissens)',
                         item_note: 'Основной радиатор'
                     },
@@ -851,7 +851,7 @@ export const DATA = [
                         item_note: 'Основной радиатор (Редкостное ГАВНО)'
                     },
                     {
-                        item_image: './images/cooling_system/main_radiator_stellox_10-26824-SX.JPG',
+                        item_image: './images/cooling_system/main_radiator_stellox_10-26824-SX.jpg',
                         item_code: '10-26824-SX (Stellox)',
                         item_note: 'Основной радиатор'
                     },
