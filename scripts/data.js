@@ -289,8 +289,13 @@ export const DATA = [
                         item_note: 'Прокладка впускного коллектора'
                     },
                     {
-                        item_image: './images/engine/intake_plenum_gasket_dnj_mg1150.webp',
+                        item_image: './images/engine/intake_plenum_gasket_dnj_mg1150.jpg',
                         item_code: 'MG1150 (DNJ)',
+                        item_note: 'Прокладка впускного коллектора'
+                    },
+                    {
+                        item_image: './images/engine/intake_manifold_gasket_ajusa_00986200.jpg',
+                        item_code: '00986200 (Ajusa)',
                         item_note: 'Прокладка впускного коллектора'
                     },
                     {
@@ -503,7 +508,7 @@ export const DATA = [
                         item_note: 'Вкладыши коленвала (Стандарт)'
                     },
                     {
-                        item_image: './images/engine/main_bearings_dnj_mb143.webp',
+                        item_image: './images/engine/main_bearings_dnj_mb143.jpg',
                         item_code: 'MB143 (DNJ)',
                         item_note: 'Вкладыши коренные (Стандарт)'
                     },
@@ -927,6 +932,11 @@ export const DATA = [
                         item_code: 'KTT110207 (Thermotec)',
                         item_note: 'Радиатор кондиционера'
                     },
+                    {
+                        item_image: './images/cooling_system/ac_condenser_avg_cr500p.jpg',
+                        item_code: 'CR500P (AVG)',
+                        item_note: 'Радиатор кондиционера'
+                    },
                 ]},
             {subtitle: 'Патрубки системы охлаждения', id: 'pipe_branch', items: [
                     {
@@ -994,12 +1004,12 @@ export const DATA = [
                         item_note: 'Большой вентилятор основного радиатора'
                     },
                     {
-                        item_image: './images/cooling_system/main_radiator_fan_patron_pfn179.webp',
+                        item_image: './images/cooling_system/main_radiator_fan_patron_pfn179.jpg',
                         item_code: 'PFN179 (Patron)',
                         item_note: 'Малый вентилятор основного радиатора'
                     },
                     {
-                        item_image: './images/cooling_system/main_radiator_fan_patron_pfn259.webp',
+                        item_image: './images/cooling_system/main_radiator_fan_patron_pfn259.jpg',
                         item_code: 'PFN259 (Patron)',
                         item_note: 'Большой вентилятор основного радиатора'
                     },
@@ -1337,7 +1347,7 @@ export const DATA = [
                         item_note: 'Пыльник шруса'
                     },
                 ]},
-            {subtitle: 'Главная передача (кардан)', id: 'cardan_shaft', items: [
+            {subtitle: 'Раздатка и карданная передача (AWD)', id: 'cardan_shaft', items: [
                     {
                         item_image: './images/transmission/cardan_coupling.jpg',
                         item_location_image: './images/transmission/cardan_coupling_matalcaucho_00735.jpg',
@@ -1410,6 +1420,11 @@ export const DATA = [
                         item_note: 'с опорным подшипником'
                     },
                     {
+                        item_image: './images/chassis/shock_absorber_support_monroe_mk278.jpg',
+                        item_code: 'MK278 (Monroe)',
+                        item_note: 'с опорным подшипником'
+                    },
+                    {
                         item_image: './images/chassis/thrust_bearing_mopar_04743044aa.jpg',
                         item_code: '04743044 (Mopar)',
                         item_note: 'опорный подшипник'
@@ -1442,6 +1457,16 @@ export const DATA = [
                         item_note: ''
                     },
                     {
+                        item_image: './images/chassis/shock_absorber_monroe_802130.jpg',
+                        item_code: '802130 (Monroe)',
+                        item_note: ''
+                    },
+                    {
+                        item_image: './images/chassis/shock_absorber_patron_psa339088.jpg',
+                        item_code: 'PSA339088 (Patron)',
+                        item_note: ''
+                    },
+                    {
                         item_image: './images/chassis/shiels_shock_absorber_dust_kyb_910023.jpg',
                         item_code: '910023 (Kayaba)',
                         item_note: 'Комплект (2 пыльника + 2 отбойника)'
@@ -1469,7 +1494,7 @@ export const DATA = [
                         item_note: 'Передний рычаг Левый (комплект)'
                     },
                     {
-                        item_image: './images/chassis/suspension_arm_front_right_srl_246038.webp',
+                        item_image: './images/chassis/suspension_arm_front_right_srl_246038.jpg',
                         item_code: '246038 (Polcar/SRLine)',
                         item_note: 'Передний рычаг Правый (комплект)'
                     },

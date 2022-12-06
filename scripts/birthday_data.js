@@ -16,6 +16,14 @@ export const BIRTHDAYS = [
         work: 'Ищу работу! 😅🤷🏻‍♂️',
     },
     {
+        nickname: 'Vladimir',
+        name: 'Владимир',
+        avatar: './images/modal_birthday_avatars/Vladimir.jpg',
+        birthday_date: '31-01-1977',
+        about: 'Не спорю с дураками ))))',
+        work: 'Журналистика',
+    },
+    {
         nickname: 'tharevckii13',
         name: 'Александр',
         avatar: './images/modal_birthday_avatars/tharevckii13.jpg',
@@ -295,12 +303,5 @@ export const BIRTHDAYS = [
         about: 'Хачу на море',
         work: 'Псих железнодорожник, люблю крутить гайки',
     },
-    {
-        nickname: 'ТЕСТ',
-        name: '',
-        avatar: './images/modal_birthday_avatars/no_avatar.jpg',
-        birthday_date: '01-12-2022',
-        about: '',
-        work: '',
-    },
+
 ]
