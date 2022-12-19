@@ -499,6 +499,7 @@ export const DATA = [
                     },
                     {
                         item_image: './images/engine/connecting_rod_bearing_dnj_rb1135.jpg',
+
                         item_code: 'RB1135 (DNJ)',
                         item_note: 'Вкладыши коленвала (Стандарт)'
                     },
@@ -1356,6 +1357,7 @@ export const DATA = [
                     },
                     {
                         item_image: './images/transmission/cardan_coupling_matalcaucho_00735.jpg',
+                        item_installation_location: './images/engine/cardan_coupling.jpg',
                         item_code: '00735 (Metalcaucho)',
                         item_note: 'Муфта кардана'
                     },

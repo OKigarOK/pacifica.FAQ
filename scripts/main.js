@@ -51,11 +51,13 @@ function addSubtitleItems(items_head, item) {
             
             <div class="item_image">      
                 <img src=${item.item_image} alt=${item.item_code}>
+<!--                <img src=${item.item_location_image}>-->
             </div>
             
             <div>
                 <div class="item_code">${item.item_code}</div>
-                <div class="copy_code">Копировать номер</div>
+<!--                <div class="copy_code">Копировать номер</div>-->             
+                <div class="copy_code">Узнать стоимость</div>
                 <div class="item_note">${item.item_note}</div>
             </div>
         </div>`)
@@ -283,21 +285,37 @@ function addUserDataToModal (USER) {
 
 // КОПИРОВАНИЕ НОМЕРА В БУФЕР
 
-const copyElements = document.querySelectorAll('.copy_code')
+// const copyElements = document.querySelectorAll('.copy_code')
 
-for(let i = 0; i < copyElements.length; i++) {
-    copyElements[i].addEventListener('click', () => {
-        const detailNumberString = copyElements[i].previousElementSibling.innerHTML;
-        const detailNumber = detailNumberString.split(' ')
-        copyTextToClipboard(detailNumber[0]);
+// for(let i = 0; i < copyElements.length; i++) {
+//     copyElements[i].addEventListener('click', () => {
+//         const detailNumberString = copyElements[i].previousElementSibling.innerHTML;
+//         const detailNumber = detailNumberString.split(' ')
+//         copyTextToClipboard(detailNumber[0]);
+//         }
+//     )
+//         async function copyTextToClipboard(prop) {
+//             try {
+//                 await navigator.clipboard.writeText(prop);
+//                 console.log(prop);
+//             } catch (err) {
+//                 console.error('Error in copying text: ', err);
+//             }
+//         }
+//     }
+
+// СТОИМОСТЬ ДЕТАЛИ
+
+const elementsCode = document.querySelectorAll('.copy_code')
+
+for(let i = 0; i < elementsCode.length; i++) {
+    elementsCode[i].addEventListener('click', () => {
+            const detailNumberString = elementsCode[i].previousElementSibling.innerHTML;
+            const detailNumber = detailNumberString.split(' ')
+            // copyTextToClipboard(detailNumber[0]);
+            // console.log(detailNumber[0]);
+            window.open(`https://www.zzap.ru/public/search.aspx#rawdata=${detailNumber[0]}`, "_blank");
+
         }
     )
-        async function copyTextToClipboard(prop) {
-            try {
-                await navigator.clipboard.writeText(prop);
-                console.log(prop);
-            } catch (err) {
-                console.error('Error in copying text: ', err);
-            }
-        }
-    }
+}

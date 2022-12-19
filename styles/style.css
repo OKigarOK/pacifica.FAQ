@@ -13,7 +13,10 @@ body {
     -moz-user-select: none;
     user-select: none;
     background: black;
-    background: url('../images/chrysler_pacifica_bg.jpg') fixed no-repeat;
+    /*background: url('../images/chrysler_pacifica_bg.jpg') fixed no-repeat;*/
+
+    background: url('../images/chat_logo.jpg') fixed no-repeat;
+
     background-size: cover;
     background-position: center;
     color: whitesmoke;
@@ -112,6 +115,9 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 5px;
+
+    /*width: 153px;*/
+    /*height: 153px;*/
 }
 
 .item_image:hover {
