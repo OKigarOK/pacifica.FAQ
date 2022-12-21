@@ -1785,7 +1785,28 @@ export const DATA = [
                     },
                 ]},
             {subtitle: 'Барабанный тормозной механизм', id: ''},
-            {subtitle: 'Тросы, тяги и рычаги тормозной системы', id: ''},
+            {subtitle: 'Тросы, тяги и рычаги тормозной системы', id: 'parking_brake_cable', items: [
+                    {
+                        item_image: './images/brake_system/parking_brake_cable_mopar_04683858ad.jpg',
+                        item_code: '04683858AD (Mopar)',
+                        item_note: 'трос стояночного тормоза (ЛЕВЫЙ = ПРАВЫЙ)'
+                    },
+                    {
+                        item_image: './images/brake_system/parking_brake_cable_raybestos_bc97130.jpg',
+                        item_code: 'BC97130 (Raybestos)',
+                        item_note: 'трос стояночного тормоза (ЛЕВЫЙ = ПРАВЫЙ)'
+                    },
+                    {
+                        item_image: './images/brake_system/parking_brake_cable_dorman_c661260.jpg',
+                        item_code: 'C661260 (Dorman)',
+                        item_note: 'трос стояночного тормоза (ЛЕВЫЙ = ПРАВЫЙ)'
+                    },
+                    {
+                        item_image: './images/brake_system/parking_brake_cable_raybestos_BC97333.jpg',
+                        item_code: 'BC97333 (Raybestos)',
+                        item_note: 'трос стояночного тормоза (основная часть)'
+                    },
+                ]},
             {subtitle: 'Стояночный тормоз', id: ''},
             {subtitle: 'Шланги тормозные', id: 'brake_hose', items: [
                     {
