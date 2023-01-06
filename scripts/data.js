@@ -1391,7 +1391,7 @@ export const DATA = [
                     },
                     {
                         item_image: './images/chassis/rear_spring_obk_c4t6188h.jpg',
-                        item_code: 'C4T6188H (OBK)',
+                        item_code: 'C4T61881H (OBK)',
                         item_note: 'Задняя пружина (подпилить)'
                     },
                     {
