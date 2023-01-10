@@ -299,6 +299,11 @@ export const DATA = [
                         item_note: 'Прокладка впускного коллектора'
                     },
                     {
+                        item_image: './images/engine/intake_plenum_gasket_fel-pro_MS96324.jpg',
+                        item_code: 'MS96324 (Fel-pro)',
+                        item_note: 'Прокладка впускного коллектора'
+                    },
+                    {
                         item_image: './images/engine/throttle_body_gasket_fel-pro_61230.jpg',
                         item_code: '61230 (Fel-pro)',
                         item_note: 'Прокладка дроссельной заслонки'
